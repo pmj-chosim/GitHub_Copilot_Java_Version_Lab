@@ -77,6 +77,42 @@ GitHub Copilot의 코드 완성 기능을 살펴 보았습니다.
 
 위 방법들을 순차적으로 실습을 통해 살펴 보겠습니다.  
   
+#### - 채팅 뷰  
+
+<img width="703" height="997" alt="image" src="https://github.com/user-attachments/assets/61b7eac0-b4ba-475a-8909-f8a15c0aa29c" />  
+IntelliJ에서 우측의 GitHub Copilot 버튼을 눌러 채팅을 엽니다.   
+채팅 뷰에서 모드를 `Ask`로 선택합니다.  
+```java
+계산기 기능을 가진 java 어플리케이션을 만들어 주세요
+```
+라고 채팅창에 입력합니다.  
+<img width="593" height="643" alt="image" src="https://github.com/user-attachments/assets/229b219a-51d8-42fe-8d87-dbb47c67f24c" />  
+채팅 창에 코드를 제시하며 설명을 해줄 것입니다.  
+
+`Agent` 모드로 바꾼 다음 동일한 질문을 해보겠습니다.  
+<img width="622" height="861" alt="image" src="https://github.com/user-attachments/assets/c7c33c4b-2a3f-4301-a87a-7203de5745cb" />  
+`Agent` 모드로 바꾼 후 
+```java
+계산기 기능을 가진 java 어플리케이션을 만들어 주세요
+```
+사진처럼 다시 질문을 해보십시오.  
+
+`Ask`모드는 채팅창에서 코드나 답을 제시했었습니다.  
+이와 달리 `Agent` 모드에선  
+Agent 모드는 "계산기 앱 만들어 줘"라고 하면 Main.java 파일에 계산기 코드를 넣어 줍니다.  
+그냥 구경하는 게 아니라 직접 일을 해주는 `Agent`처럼 동작합니다.  
+<img width="1527" height="907" alt="image" src="https://github.com/user-attachments/assets/d30661c3-23f0-4fc5-a26a-dab61f1cef0b" />  
+
+지금과 같이 `Main.java` 하나만 있는 간단한 프로젝트는 물론이고, 파일이 여러 개 섞여서 머리 아픈 복잡한 프로젝트도 문제없이 수정해줍니다.  
+Agent 모드는 전체 프로젝트를 쫙 훑어보고 어디를 어떻게 고쳐야 할지 스스로 판단해서 여러 파일을 넘나들며 수정해주기 때문입니다.  
+
+
+
+
+
+
+
+  
 
 
 

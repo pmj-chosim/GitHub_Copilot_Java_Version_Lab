@@ -24,11 +24,11 @@ IntelliJ에서 `File` >  `New` > `Project` 를 통해 프로젝트를 만듭니�
 <img width="976" height="523" alt="image" src="https://github.com/user-attachments/assets/1b711fa1-e1da-467c-be79-571425786704" />  
   
 
-(1) 코드 완성 기능  
+### (1) 코드 완성 기능  
 코드 완성 기능은 사용자가 코드를 작업하는 공간에서 코드를 제안 받는 것입니다.  
 주석을 작성하거나 자동 작성을 통해 코드를 완성할 수 있습니다.  
 
-- 주석을 통해 원하는 기능을 자동으로 제안 받을 수 있습니다.
+**- 주석을 통해 원하는 기능을 자동으로 제안 받을 수 있습니다.**
 <img width="912" height="636" alt="image" src="https://github.com/user-attachments/assets/cfe369dc-95da-4e72-86bf-83266c65fc5b" />
 
 앞서 생성한 프로젝트의 `Main.java` 파일에 위 사진과 같이 주석을 작성합니다.
@@ -42,9 +42,24 @@ Copilot이 위 예시와 비슷하게 제안해준 내용을 수락합니다. �
 <img width="322" height="86" alt="image" src="https://github.com/user-attachments/assets/c4baefcd-9dfc-4af2-8608-18094de94257" />  
 
 
+**- 코드를 작성하는 와중에도 코드를 제안 받을 수 있습니다.**  
+
+```java
+Integer sumValueOneToTen = 0;
+```
+위 코드를 앞서 실습했던 내용 뒤에 붙여 넣어 주세요.  
+<img width="762" height="375" alt="image" src="https://github.com/user-attachments/assets/edce3d78-e88a-4c75-90aa-366bd74f4765" />  
+
+위 사진처럼 붙여 넣고 나서, 키보드의 `Enter` 버튼을 누릅니다.  
+  
+<img width="370" height="135" alt="image" src="https://github.com/user-attachments/assets/87bb0389-197c-4a34-a9da-f026550d24c6" />  
+  
+`Enter` 버튼을 누르면 위 사진과 같이 Copilot에게 코드를 제안 받을 수 있습니다.  
+`Tab` 버튼을 눌러 Copilot의 제안을 수락할 수 있습니다.  
+<img width="327" height="127" alt="image" src="https://github.com/user-attachments/assets/83f2bf26-a437-49bd-94cf-f3959bdd60a0" />  
 
 
--   
+
 
 
 

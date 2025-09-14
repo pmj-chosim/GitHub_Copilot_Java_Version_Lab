@@ -83,6 +83,7 @@ GitHub Copilot의 코드 완성 기능을 살펴 보았습니다.
   <br>
 IntelliJ에서 우측의 GitHub Copilot 버튼을 눌러 채팅을 엽니다.   
 채팅 뷰에서 모드를 `Ask`로 선택합니다.      
+  
 ```java
 계산기 기능을 가진 java 어플리케이션을 만들어 주세요
 ```

@@ -154,10 +154,11 @@ public class Todo {
 * 코드 바로 옆에 나타나는 작은 아이콘들을 확인하세요. 이것이 바로 **스마트 액션**입니다.
 * `addTodo` 메서드를 드래그 후 `마우스 우클릭` > `GitHub Copilot` > `Explain This` 를 통해 설명을 생성합니다. <br>  
 <img width="1011" height="823" alt="image" src="https://github.com/user-attachments/assets/ee8a7d70-3251-4ed5-884a-c8d735752f0a" />
-  <br>
+  <br> <br>
+    
 * `addTodo` 메서드를 드래그 후 `마우스 우클릭` > `GitHub Copilot` > `Generate Docs`를 선택해 주석(문서)을 생성합니다. <br>
 <img width="803" height="809" alt="image" src="https://github.com/user-attachments/assets/5e227c05-9dd2-4e57-aee5-29800f898a47" />
-<br>  
+<br>  <br>  
 * 이 기능들을 사용해서 코드를 리팩토링하거나 테스트 코드를 생성해보세요.  
 
 ---

@@ -123,7 +123,8 @@ Edit 모드도 사용해보겠습니다.
 이 질문을 다시 붙여 넣고 물어 보겠습니다.  
 
 <img width="1473" height="907" alt="image" src="https://github.com/user-attachments/assets/f0976b8b-593b-4c81-9191-c6aa533b24ec" />  <br>
-사진처럼 아까 선택했던 `Main.java`의 코드들을 수정해 줄 것입니다.  <br>
+사진처럼 아까 선택했던 `Main.java`의 코드들을 수정해 줄 것입니다.  <br>  
+`Accept All` 버튼을 눌러 수정 제안을 받아 들입니다.  
 
 `Edit`에서는 선택한 Main.java 코드에서 필요한 부분만 수정했을 것입니다.  
 반면, `Agent`도 작업 공간의 코드를 변경했습니다. 다만, 사용자가 따로 파일을 지정하지 않아도 스스로 필요한 파일을 찾아 여러 파일을 넘나들며 수정한다는 점에서 차이가 있습니다.  
@@ -143,7 +144,29 @@ Edit 모드도 사용해보겠습니다.
 
 예를 들어, 어떤 함수의 기능이 궁금할 때, 그 함수 위에 커서를 두고 인라인 채팅을 활성화해서 "이 함수는 무슨 역할을 해?"라고 물어볼 수 있습니다. 그러면 코파일럿이 바로 옆에 답변을 띄워주는 식으로 동작합니다.  
 
-이 기능은 코딩 흐름을 끊지 않고 필요한 정보를 얻거나, 코드 수정에 대한 도움을 받고 싶을 때 매우 유용합니다.    
+이 기능은 코딩 흐름을 끊지 않고 필요한 정보를 얻거나, 코드 수정에 대한 도움을 받고 싶을 때 매우 유용합니다.   <br>
+
+<img width="858" height="842" alt="image" src="https://github.com/user-attachments/assets/dc82cb76-2998-48ea-a11e-497c293b445f" />  
+  
+`Main.java` 파일에 마우스 커서를 올린 후,  
+  
+<img width="1014" height="783" alt="image" src="https://github.com/user-attachments/assets/66a24b75-c913-4f35-86ca-2165aacf9941" />  
+
+우클릭을 하면 `GitHub Copilot` 메뉴가 맨 하단에 뜰 것입니다.  
+메뉴에서 `Copilot: Open Inline Chat` 을 클릭합니다.  
+  
+그리고 
+```java
+지금 코드 동작을 간략하게 설명해줘
+```
+라고 입력합니다.  
+  
+<img width="983" height="588" alt="image" src="https://github.com/user-attachments/assets/270426a8-20cf-4998-b170-351a14fe66b2" />  
+
+위 사진처럼 코드 작업 공간에서 편리하게 원하는 질문을 할 수 있음을
+실습을 통해 알아 보았습니다.  
+
+
 
 
 

@@ -15,7 +15,7 @@ module2 이름과 샘플 코드 없이 프로젝트를 생성합니다.
   
 `src` 폴더에 `Main.java`, `Todo.java`, `TodoListManager.java` 세 클래스 파일을 만듭니다.  
 
-Main.java 클래스 파일에 다음 내용을 붙여 넣습니다.  
+`Main.java` 클래스 파일에 다음 내용을 붙여 넣습니다.  
 ```java
 import java.util.Scanner;
 

@@ -80,6 +80,7 @@ GitHub Copilot의 코드 완성 기능을 살펴 보았습니다.
 #### - 채팅 뷰  
 
 <img width="703" height="997" alt="image" src="https://github.com/user-attachments/assets/61b7eac0-b4ba-475a-8909-f8a15c0aa29c" />  
+  
 IntelliJ에서 우측의 GitHub Copilot 버튼을 눌러 채팅을 엽니다.   
 채팅 뷰에서 모드를 `Ask`로 선택합니다.  
 ```java

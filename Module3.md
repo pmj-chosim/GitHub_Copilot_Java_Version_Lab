@@ -7,7 +7,7 @@
 
 이 실습은 IntelliJ에서 진행됩니다. 먼저 프로젝트를 설정해 주세요.
 
-1.  IntelliJ에서 **`File`** > **`New`** > **`Project`**를 선택해 새 프로젝트를 만듭니다.
+1.  IntelliJ에서 **`File`** >  **`New`**  >  **`Project`** 를 선택해 새 프로젝트를 만듭니다.
 2.  `module3`과 같은 이름으로 프로젝트를 생성하되, 샘플 코드는 만들지 않습니다.
 3.  `src` 폴더에 `Main.java`, `Todo.java`, `TodoListManager.java` 세 클래스 파일을 만듭니다.
 **`Main.java`**

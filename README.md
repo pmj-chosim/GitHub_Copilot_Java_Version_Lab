@@ -32,7 +32,7 @@ IntelliJ에서 `File` >  `New` > `Project` 를 통해 프로젝트를 만듭니�
 #### - 주석을 통해 원하는 기능을 자동으로 제안 받을 수 있습니다.
 <img width="912" height="636" alt="image" src="https://github.com/user-attachments/assets/cfe369dc-95da-4e72-86bf-83266c65fc5b" />
 
-앞서 생성한 프로젝트의 `Main.java` 파일에 위 사진과 같이 주석을 작성합니다.
+앞서 생성한 프로젝트의 `Main.java` 파일에 위 사진과 같이 주석을 작성합니다.  
 ```java
 // 출력 완료 메세지를 보여줍니다.
 ```
@@ -45,7 +45,7 @@ Copilot이 위 예시와 비슷하게 제안해준 내용을 수락합니다. �
 <br> <br>  
 
 #### - 코드를 작성하는 와중에도 코드를 제안 받을 수 있습니다.  
-
+  
 ```java
 Integer sumValueOneToTen = 0;
 ```
@@ -82,7 +82,7 @@ GitHub Copilot의 코드 완성 기능을 살펴 보았습니다.
 <img width="703" height="997" alt="image" src="https://github.com/user-attachments/assets/61b7eac0-b4ba-475a-8909-f8a15c0aa29c" />  
   <br>
 IntelliJ에서 우측의 GitHub Copilot 버튼을 눌러 채팅을 엽니다.   
-채팅 뷰에서 모드를 `Ask`로 선택합니다.  
+채팅 뷰에서 모드를 `Ask`로 선택합니다.      
 ```java
 계산기 기능을 가진 java 어플리케이션을 만들어 주세요
 ```
@@ -93,7 +93,7 @@ IntelliJ에서 우측의 GitHub Copilot 버튼을 눌러 채팅을 엽니다.
 `Agent` 모드로 바꾼 다음 동일한 질문을 해보겠습니다.  <br>
 <img width="622" height="861" alt="image" src="https://github.com/user-attachments/assets/c7c33c4b-2a3f-4301-a87a-7203de5745cb" />  <br>
 `Agent` 모드로 바꾼 후 
-```java
+```java  
 계산기 기능을 가진 java 어플리케이션을 만들어 주세요
 ```
 사진처럼 다시 동일한 질문을 같이 해보겠습니다.

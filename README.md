@@ -61,6 +61,12 @@ Integer sumValueOneToTen = 0;
 <img width="327" height="127" alt="image" src="https://github.com/user-attachments/assets/83f2bf26-a437-49bd-94cf-f3959bdd60a0" />  
 
 
+GitHub Copilot의 코드 완성 기능을 살펴 보았습니다.  
+원하는 기능을 주석을 통해 적거나, 코드를 작성하고 있는 중이라면 GitHub Copulot으로부터 코드를 제안 받을 수 있습니다.   
+
+
+
+
 
 
 

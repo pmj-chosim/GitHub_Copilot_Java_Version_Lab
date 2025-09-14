@@ -153,14 +153,13 @@ public class TodoListManager {
 ---
 
   
-#### **2단계: 인라인 채팅으로 새로운 기능 개발하기**
+#### **2단계: 자동 완성으로 기능 개발하기**
 
 이제 '할 일 목록을 파일에 저장하는 기능'을 개발해 봅시다. **인라인 채팅**을 사용해 코딩 흐름을 끊지 않고 바로바로 도움을 받을 수 있습니다.
 
 1. `TodoListManager.java` 파일에 새로운 메서드 시그니처인 `public void saveTodosToFile(String filename)`를 입력하세요.
-2. 커서를 메서드 본문 안에 두고, **인라인 채팅**을 활성화하세요.
-3. 채팅창에 `이 메서드가 할 일 목록을 파일에 저장하도록 구현해줘.`라고 요청합니다.
-4. 코파일럿이 코드를 제안해주면 `Tab` 키로 받아들여 메서드를 완성합니다.
-5. `TodoListManager.java`에서 방금 추가한 `saveTodosToFile` 메서드를 마우스로 드래그해서 선택하세요.
-6. 마우스 우클릭 > `GitHub Copilot` > `Open Inline Chat`을 선택한 뒤, `파일에 저장할 때 에러 처리를 추가해줘`와 같이 요청해 코드를 개선할 수 있습니다.
+2. 커서를 메서드 본문 안에 둔 다음, 엔터를 누르면 GitHub Copilot이 자동으로 코드를 제시해줍니다. <br>
+<img width="750" height="271" alt="image" src="https://github.com/user-attachments/assets/9e3265a7-4533-43e8-af54-3932839f77ba" />  <br>
+  
+3. `Tab` 버튼을 눌러 제안된 코드를 수락합니다.   
 

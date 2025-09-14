@@ -27,6 +27,7 @@ IntelliJ에서 `File` >  `New` > `Project` 를 통해 프로젝트를 만듭니�
 ### (1) 코드 완성 기능  
 코드 완성 기능은 사용자가 코드를 작업하는 공간에서 코드를 제안 받는 것입니다.  
 주석을 작성하거나 자동 작성을 통해 코드를 완성할 수 있습니다.  
+<br>  
 
 #### - 주석을 통해 원하는 기능을 자동으로 제안 받을 수 있습니다.
 <img width="912" height="636" alt="image" src="https://github.com/user-attachments/assets/cfe369dc-95da-4e72-86bf-83266c65fc5b" />
@@ -41,6 +42,7 @@ IntelliJ에서 `File` >  `New` > `Project` 를 통해 프로젝트를 만듭니�
 Copilot이 위 예시와 비슷하게 제안해준 내용을 수락합니다. 키보드의 `Tab` 버튼을 눌러 수락할 수 있습니다.  
 <img width="322" height="86" alt="image" src="https://github.com/user-attachments/assets/c4baefcd-9dfc-4af2-8608-18094de94257" />  
 
+<br> <br>  
 
 #### - 코드를 작성하는 와중에도 코드를 제안 받을 수 있습니다.  
 

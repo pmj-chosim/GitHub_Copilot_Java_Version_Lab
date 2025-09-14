@@ -12,6 +12,7 @@ module2 이름과 샘플 코드 없이 프로젝트를 생성합니다.
   
 <img width="388" height="117" alt="image" src="https://github.com/user-attachments/assets/4d05f056-5383-45fc-a8a7-4e5830f3893e" />  
 <br>  
+  
 `src` 폴더에 `Main.java`, `Todo.java`, `TodoListManager.java` 세 클래스 파일을 만듭니다.  
 
 Main.java 클래스 파일에 다음 내용을 붙여 넣습니다.  

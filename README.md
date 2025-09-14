@@ -1,4 +1,4 @@
-# GitHubCopilot_Develop_Java  
+<img width="651" height="381" alt="image" src="https://github.com/user-attachments/assets/1cc2b569-4991-490e-abdf-89b759315757" /># GitHubCopilot_Develop_Java  
 
 ## 1. IntelliJ에 GitHub Copilot 설치하기  
 
@@ -104,7 +104,33 @@ Agent 모드는 "계산기 앱 만들어 줘"라고 하면 Main.java 파일에 �
 <img width="1527" height="907" alt="image" src="https://github.com/user-attachments/assets/d30661c3-23f0-4fc5-a26a-dab61f1cef0b" />  
 
 지금과 같이 `Main.java` 하나만 있는 간단한 프로젝트는 물론이고, 파일이 여러 개 섞여서 머리 아픈 복잡한 프로젝트도 문제없이 수정해줍니다.  
-Agent 모드는 전체 프로젝트를 쫙 훑어보고 어디를 어떻게 고쳐야 할지 스스로 판단해서 여러 파일을 넘나들며 수정해주기 때문입니다.  
+Agent 모드는 여러 내용들을 쫙 훑어보고 어디를 어떻게 고쳐야 할지 스스로 판단해서 여러 파일을 넘나들며 수정해주기 때문입니다.  
+
+Edit 모드도 사용해보겠습니다.  
+<img width="1176" height="902" alt="image" src="https://github.com/user-attachments/assets/378c4779-d905-44f8-abc7-d90012913531" />  
+채팅에서 `Edit`을 선택해 모드를 변경하려고 하면, 위 사진과 같은 팝업이 뜰 것입니다.  
+`Discard` 버튼을 누릅니다.  
+<img width="601" height="311" alt="image" src="https://github.com/user-attachments/assets/1b9bf47c-97eb-4b36-a33f-23f02ddeac64" />  
+`Add Files` 버튼을 누른 후, `Main.java` 파일을 선택합니다.  
+<img width="651" height="381" alt="image" src="https://github.com/user-attachments/assets/525b9c2c-ff78-4efd-887f-c7dbffb6eb8f" />  
+`Main.java`파일을 더블 클릭하면 위와 같이 파일을 추가할 수 있습니다.  
+그 다음 채팅창에 
+```java
+계산기 기능을 가진 java 어플리케이션을 만들어 주세요
+```
+이 질문을 다시 붙여 넣고 물어 보겠습니다.  
+
+<img width="1473" height="907" alt="image" src="https://github.com/user-attachments/assets/f0976b8b-593b-4c81-9191-c6aa533b24ec" />  
+사진처럼 아까 선택했던 `Main.java`의 코드들을 수정해 줄 것입니다.  
+
+`Ask`모드는 ~~, `Agent` 모드는 ~~, `Edit` 모드는 ~~ 와 같은 차이점이 있습니다.  
+
+
+
+
+
+
+
 
 
 

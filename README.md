@@ -170,7 +170,8 @@ Edit 모드도 사용해보겠습니다.
 <br> <br>  
 #### - 스마트 액션  
 스마트 액션은 GitHub Copilot을 통해 받고 싶은 도움을 귀찮게 채팅을 치지 않아도 쉽게 받을 수 있게 하는 방법입니다.  
-<img width="941" height="929" alt="image" src="https://github.com/user-attachments/assets/85550819-b6fa-44db-a5a8-eb7d1f88f362" />  <br>
+<img width="941" height="929" alt="image" src="https://github.com/user-attachments/assets/85550819-b6fa-44db-a5a8-eb7d1f88f362" />  
+<br>  
 
 위 사진처럼 코드 작업 공간에서 마우스 커서를 둔 후, 우클릭을 하면 `GitHub Copilot`이 뜰 것입니다.  
 메뉴를 살펴보면 `Simplfy This`, `Generate Docs` `Generate Tests`, `Fix This`, `Explain This` 이것들을 확인할 수 있습니다.  
@@ -179,7 +180,8 @@ Edit 모드도 사용해보겠습니다.
 
 하지만, 이 스마트 액션을 통해 채팅을 입력하지 않고도 요약을 요청해보겠습니다.  
 `마우스 우클릭` > `GitHub Copilot` 선택 > `Explain This` 를 선택합니다.  
-<img width="1495" height="662" alt="image" src="https://github.com/user-attachments/assets/360cdecc-dcab-40e0-a00c-89e058d8f83d" />  <br>
+<img width="1495" height="662" alt="image" src="https://github.com/user-attachments/assets/360cdecc-dcab-40e0-a00c-89e058d8f83d" />  
+<br>  
 
 위와 같이 해당 코드에 대한 설명을 채팅을 입력하지 않아도 얻을 수 있습니다.  
 

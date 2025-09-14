@@ -159,7 +159,7 @@ public class Todo {
 * `addTodo` 메서드를 드래그 후 `마우스 우클릭` > `GitHub Copilot` > `Generate Docs`를 선택해 주석(문서)을 생성합니다. <br>
 <img width="803" height="809" alt="image" src="https://github.com/user-attachments/assets/5e227c05-9dd2-4e57-aee5-29800f898a47" />
 <br>  <br>  
-* 이 기능들을 사용해서 코드를 리팩토링하거나 테스트 코드를 생성해보세요.  
+* 이 기능들을 사용해서 다른 코드들에 대해 설명을 생성하거나 주석을 생성해보세요.  
 
 ---
 

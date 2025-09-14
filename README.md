@@ -16,11 +16,36 @@
 - 코드 완성 기능
 - 채팅
 
-이 두 가지 기능을 각각 살펴 봅니다.  
+이 두 가지 기능을 각각 실습을 통해 살펴 봅니다.  
+실습 전, 실습을 할 수 있도록 새로운 프로젝트를 먼저 열어 봅니다.  
+
+IntelliJ에서 `File` >  `New` > `Project` 를 통해 프로젝트를 만듭니다.  
+프로젝트명과 Java 버전은 상관없으나, 아래와 같이 `module1` 이름과 `17` 버전을 사용하길 권장드립니다.  
+<img width="976" height="523" alt="image" src="https://github.com/user-attachments/assets/1b711fa1-e1da-467c-be79-571425786704" />  
+  
 
 (1) 코드 완성 기능  
 코드 완성 기능은 사용자가 코드를 작업하는 공간에서 코드를 제안 받는 것입니다.  
 주석을 작성하거나 자동 작성을 통해 코드를 완성할 수 있습니다.  
+
+- 주석을 통해 원하는 기능을 자동으로 제안 받을 수 있습니다.
+<img width="912" height="636" alt="image" src="https://github.com/user-attachments/assets/cfe369dc-95da-4e72-86bf-83266c65fc5b" />
+
+앞서 생성한 프로젝트의 `Main.java` 파일에 위 사진과 같이 주석을 작성합니다.
+```java
+// 출력 완료 메세지를 보여줍니다.
+```
+
+주석을 작성한 후 `Enter`를 눌러 다음 줄로 이동합니다.  
+<img width="396" height="147" alt="image" src="https://github.com/user-attachments/assets/1a85a05d-c8d9-486f-b1ed-3a57010978da" />  
+Copilot이 위 예시와 비슷하게 제안해준 내용을 수락합니다. 키보드의 `Tab` 버튼을 눌러 수락할 수 있습니다.  
+<img width="322" height="86" alt="image" src="https://github.com/user-attachments/assets/c4baefcd-9dfc-4af2-8608-18094de94257" />  
+
+
+
+
+-   
+
 
 
 

@@ -142,7 +142,7 @@ public class TodoListManager {
 이제 '할 일 삭제'라는 새로운 기능을 개발해 봅시다. **인라인 채팅**을 사용하면 코딩 흐름을 끊지 않고 바로바로 도움을 받을 수 있습니다.
 
 1.  `TodoListManager.java` 파일의 마지막 메서드 아래에 새로운 메서드 시그니처인 `public void removeTodo(int index)`를 입력하세요.
-2.  커서를 메서드 본문 안에 두고, **인라인 채팅**을 활성화하세요.  <br>  
+2.  커서를 메서드 본문 안에 두고, **인라인 채팅** (`마우스 우클릭` > ``GitHub Copilot` > `Copilot: Open Inline Chat` 을 활성화하세요.  <br>  
 <img width="617" height="357" alt="image" src="https://github.com/user-attachments/assets/2a2f0234-c35b-42df-a3f7-ac669a6fc9aa" />  <br>  
 
 3.  채팅창에 `받아온 인덱스에 해당하는 할 일을 리스트에서 삭제하고, 삭제 성공 메시지를 출력해줘. 인덱스가 유효하지 않으면 에러 메시지를 출력해줘.`라고 요청합니다.  

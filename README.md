@@ -1,4 +1,4 @@
-<img width="651" height="381" alt="image" src="https://github.com/user-attachments/assets/1cc2b569-4991-490e-abdf-89b759315757" /># GitHubCopilot_Develop_Java  
+# GitHubCopilot_Develop_Java  
 
 ## 1. IntelliJ에 GitHub Copilot 설치하기  
 

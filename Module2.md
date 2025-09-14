@@ -139,7 +139,7 @@ public class Todo {
 
 * `Todo.java` 파일을 엽니다.
 * `isCompleted()` 메서드에 커서를 둡니다.
-* `마우스 우클릭` > `GitHub Copilot` > `Copilot: Inline Chat` 버튼을 눌러 **인라인 채팅**을 활성화하세요.
+* `마우스 우클릭` > `GitHub Copilot` > `Copilot: Open Inline Chat` 버튼을 눌러 **인라인 채팅**을 활성화하세요.
 * 코드 옆에 나타나는 **채팅창**에 `/explain 이 메서드가 무슨 역할을 해?`와 같이 원하는 질문을 입력합니다.
 * 코파일럿이 해당 메서드의 역할에 대해 설명해줄 것입니다.
 * 다른 파일의 코드도 같은 방법으로 직접 질문하며 그 역할을 파악해 보세요.

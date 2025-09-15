@@ -41,7 +41,7 @@ IntelliJ에서 `File` > `Open`을 통해 방금 clone한 폴더를 열어 주세
 `TodoServiceTest.java` 파일에 대한 테스트 코드를 작성해 봅시다.
 
 1.  `TodoServiceTest.java` 파일을 열고 클래스 본문 안에 커서를 둡니다.
-2.  `Ctrl + I` (Windows/Linux) 또는 `Cmd + I` (Mac) 단축키를 눌러 **인라인 채팅**을 활성화합니다.
+2.  `마우스 우클릭` > `GitHub Copilot` > `Copilot: Open Inline Chat`을 눌러 **인라인 채팅**을 활성화합니다.
 3.  채팅창에 `addTodo 메서드에 대한 단위 테스트를 만들어줘. "새로운 할 일을 추가하면 목록 크기가 1 증가해야 한다"는 것을 확인해줘.`와 같이 요청합니다.
 4.  코파일럿이 제안하는 코드를 `Tab` 키로 받아들여 메서드를 완성합니다.
 
@@ -54,4 +54,4 @@ IntelliJ에서 `File` > `Open`을 통해 방금 clone한 폴더를 열어 주세
 3.  **마우스 우클릭 > `GitHub Copilot` > `Generate Tests`**를 선택합니다.
 4.  코파일럿이 채팅창에 테스트 코드 스니펫을 제안하면, 이를 복사하여 `TodoControllerTest.java` 파일을 직접 만들어 붙여 넣습니다.
   
-* `#file README.md "단위 테스트" 섹션의 내용을 더 상세하게 수정해줘`라고 입력합니다.
+

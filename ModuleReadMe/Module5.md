@@ -8,7 +8,7 @@ GitHub Copilot은 기존 코드의 품질, 성능, 가독성, 유지보수성을
 
 #### 실습 준비
 
-IntelliJ에서 이전에 만든 Spring Boot 프로젝트가 열려 있는지 확인하세요.
+IntelliJ에서 이전 Module4에서 사용한 Spring Boot 프로젝트가 열려 있는지 확인하세요.
 
 ---
 

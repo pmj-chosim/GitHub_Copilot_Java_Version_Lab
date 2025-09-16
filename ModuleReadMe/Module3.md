@@ -12,7 +12,7 @@
 --
 
 >먼저 프로젝트를 설정해 주세요.  
-
+>
 >1.  IntelliJ에서 **`File`** >  **`New`**  >  **`Project`** 를 선택해 새 프로젝트를 만듭니다.
 >2.  `module3`과 같은 이름으로 프로젝트를 생성하되, 샘플 코드는 만들지 않습니다.
 >3.  `src` 폴더에 `Main.java`, `Todo.java`, `TodoListManager.java` 세 클래스 파일을 만듭니다.
@@ -27,45 +27,45 @@
 >        Scanner scanner = new Scanner(System.in);
 >        boolean running = true;
 >
-        System.out.println("간단한 To-Do 리스트 앱을 시작합니다.");
-
-        while (running) {
-            System.out.println("\n--- 옵션을 선택하세요 ---");
-            System.out.println("1. 할 일 추가");
-            System.out.println("2. 할 일 목록 보기");
-            System.out.println("3. 할 일 완료하기");
-            System.out.println("4. 종료");
-            System.out.print("선택: ");
-
-            String input = scanner.nextLine();
-
-            switch (input) {
-                case "1":
-                    System.out.print("추가할 할 일 제목을 입력하세요: ");
-                    String title = scanner.nextLine();
-                    manager.addTodo(title);
-                    break;
-                case "2":
-                    manager.listTodos();
-                    break;
-                case "3":
-                    System.out.print("완료할 할 일의 번호를 입력하세요: ");
-                    int index = Integer.parseInt(scanner.nextLine());
-                    manager.completeTodo(index);
-                    break;
-                case "4":
-                    running = false;
-                    System.out.println("To-Do 리스트 앱을 종료합니다.");
-                    break;
-                default:
-                    System.out.println("유효하지 않은 옵션입니다. 다시 선택해주세요.");
-                    break;
-            }
-        }
-        scanner.close();
-    }
-}
-```
+>        System.out.println("간단한 To-Do 리스트 앱을 시작합니다.");
+>
+>        while (running) {
+>            System.out.println("\n--- 옵션을 선택하세요 ---");
+>            System.out.println("1. 할 일 추가");
+>            System.out.println("2. 할 일 목록 보기");
+>            System.out.println("3. 할 일 완료하기");
+>            System.out.println("4. 종료");
+>            System.out.print("선택: ");
+>
+>            String input = scanner.nextLine();
+>
+>            switch (input) {
+>                case "1":
+>                    System.out.print("추가할 할 일 제목을 입력하세요: ");
+>                    String title = scanner.nextLine();
+>                    manager.addTodo(title);
+>                    break;
+>                case "2":
+>                    manager.listTodos();
+>                    break;
+>                case "3":
+>                    System.out.print("완료할 할 일의 번호를 입력하세요: ");
+>                    int index = Integer.parseInt(scanner.nextLine());
+>                    manager.completeTodo(index);
+>                    break;
+>                case "4":
+>                    running = false;
+>                    System.out.println("To-Do 리스트 앱을 종료합니다.");
+>                    break;
+>                default:
+>                    System.out.println("유효하지 않은 옵션입니다. 다시 선택해주세요.");
+>                    break;
+>            }
+>        }
+>        scanner.close();
+>    }
+>}
+>```
   
 >**`Todo.java`**  
 ```java

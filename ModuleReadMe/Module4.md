@@ -9,6 +9,11 @@ GitHub Copilot은 복잡한 프레임워크 기반의 프로젝트에서 테스�
 #### 실습 준비
 이번 모듈4와 모듈5에서는 Java 17 버전으로 작성된 Spring Boot 앱 예제 코드를 사용합니다.  
 
+* Java 17 버전이 없다면?
+> IntelliJ에서 설치할 수 있습니다.
+> `File` > `Project Structure` > `SDK` > `Download JDK..`
+<img width="980" height="627" alt="image" src="https://github.com/user-attachments/assets/20d23ada-fb26-4ac0-bdfe-d59195366dcb" />
+
 
 터미널창에 현재 GitHub 레포지토리 내용을 clone합니다.  
 ```bash

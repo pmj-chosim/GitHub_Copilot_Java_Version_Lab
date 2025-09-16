@@ -5,6 +5,7 @@
 
 #### 실습 준비  
 IntelliJ에서 `File` > `New` > `Project` 를 선택해 새 프로젝트를 만들어 줍니다.  
+Java 버전은 17버전 사용을 권장드리나, 다른 버전을 사용해도 무관합니다.  
 <br>  
 <img width="952" height="606" alt="image" src="https://github.com/user-attachments/assets/b0121be7-9944-41ae-96c6-2e5afeca110e" />  
 <br>  

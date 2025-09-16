@@ -9,6 +9,27 @@
 
 ---
 ### **0단계: Java 21 설치하기** 
+만약 컴퓨터에 Java 21이 설치되어 있지 않다면, 아래의 방법으로 설치를 진행해 주세요.
+
+1.  **Project Structure 메뉴 열기**
+    IntelliJ 상단 메뉴에서 `File` > `Project Structure...` 로 이동합니다.
+
+2.  **SDK 설정 화면으로 이동**
+    왼쪽 메뉴에서 `Platform Settings` > `SDKs`를 선택합니다. 이곳에서 현재 IntelliJ에 설정된 JDK 목록을 볼 수 있습니다.
+
+3.  **새로운 JDK 다운로드**
+    상단의 `+` 아이콘 (Add New SDK)을 클릭한 뒤, 드롭다운 메뉴에서 `Download JDK...`를 선택합니다.
+
+4.  **JDK 버전 및 공급업체 선택**
+    `Download JDK` 팝업창이 나타나면 다음과 같이 설정합니다.
+    * **Version**: `21` 을 선택합니다. (LTS 버전인지 확인)
+    * **Vendor**: 선호하는 공급업체(Vendor)를 선택합니다. 특별한 선호가 없다면 `Microsoft OpenJDK` 또는 `Eclipse Temurin`을 선택하는 것을 권장합니다.
+    * **Location**: 설치될 경로를 확인합니다. (보통 기본 경로를 그대로 사용합니다.)
+
+    설정이 완료되면 `Download` 버튼을 클릭합니다.
+
+IntelliJ가 자동으로 JDK 21을 다운로드하고 설치한 뒤, SDK 목록에 추가해 줍니다. 이제 프로젝트에서 Java 21을 사용할 모든 준비가 끝났습니다!  
+  
 
 ### **1단계: Spring Boot 프로젝트 생성**
 

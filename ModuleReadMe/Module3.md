@@ -11,13 +11,13 @@
 모듈 2 실습 폴더가 없다면 아래 내용을 통해 베이스 코드를 생성해주세요.  
 --
 
-먼저 프로젝트를 설정해 주세요.  
+>먼저 프로젝트를 설정해 주세요.  
 
-1.  IntelliJ에서 **`File`** >  **`New`**  >  **`Project`** 를 선택해 새 프로젝트를 만듭니다.
-2.  `module3`과 같은 이름으로 프로젝트를 생성하되, 샘플 코드는 만들지 않습니다.
-3.  `src` 폴더에 `Main.java`, `Todo.java`, `TodoListManager.java` 세 클래스 파일을 만듭니다.
+>1.  IntelliJ에서 **`File`** >  **`New`**  >  **`Project`** 를 선택해 새 프로젝트를 만듭니다.
+>2.  `module3`과 같은 이름으로 프로젝트를 생성하되, 샘플 코드는 만들지 않습니다.
+>3.  `src` 폴더에 `Main.java`, `Todo.java`, `TodoListManager.java` 세 클래스 파일을 만듭니다.
      
-**`Main.java`**
+>**`Main.java`**
 ```java
 import java.util.Scanner;
 
@@ -67,7 +67,7 @@ public class Main {
 }
 ```
   
-**`Todo.java`**  
+>**`Todo.java`**  
 ```java
 public class Todo {
     private String title;
@@ -91,7 +91,7 @@ public class Todo {
     }
 }
 ```
-**`TodoListManager.java`**  
+>**`TodoListManager.java`**  
 ```java
 import java.util.ArrayList;
 import java.util.List;
@@ -132,7 +132,7 @@ public class TodoListManager {
     }
 }
 ```
-
+>
 --
 
   

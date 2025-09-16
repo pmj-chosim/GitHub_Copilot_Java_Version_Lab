@@ -66,77 +66,74 @@
 >    }
 >}
 >```
-  
+>  
 >**`Todo.java`**  
-```java
-public class Todo {
-    private String title;
-    private boolean isCompleted;
-
-    public Todo(String title) {
-        this.title = title;
-        this.isCompleted = false;
-    }
-
-    public boolean isCompleted() {
-        return isCompleted;
-    }
-
-    public void markAsCompleted() {
-        this.isCompleted = true;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-}
-```
->**`TodoListManager.java`**  
-```java
-import java.util.ArrayList;
-import java.util.List;
-
-public class TodoListManager {
-    private List<Todo> todos;
-
-    public TodoListManager() {
-        this.todos = new ArrayList<>();
-    }
-
-    public void addTodo(String title) {
-        todos.add(new Todo(title));
-        System.out.println("새로운 할 일이 추가되었습니다: " + title);
-    }
-
-    public void listTodos() {
-        if (todos.isEmpty()) {
-            System.out.println("할 일이 없습니다.");
-            return;
-        }
-        System.out.println("--- 할 일 목록 ---");
-        for (int i = 0; i < todos.size(); i++) {
-            Todo todo = todos.get(i);
-            String status = todo.isCompleted() ? "[완료]" : "[미완료]";
-            System.out.println(String.format("%d. %s %s", i + 1, status, todo.getTitle()));
-        }
-        System.out.println("-----------------");
-    }
-
-    public void completeTodo(int index) {
-        if (index > 0 && index <= todos.size()) {
-            todos.get(index - 1).markAsCompleted();
-            System.out.println("할 일이 완료되었습니다.");
-        } else {
-            System.out.println("유효하지 않은 번호입니다.");
-        }
-    }
-}
-```
+>```java
+>public class Todo {
+>    private String title;
+>    private boolean isCompleted;
 >
---
-
-  
-4.  위에서 제공된 완성된 코드를 각 파일에 붙여 넣으세요.
+>    public Todo(String title) {
+>        this.title = title;
+>        this.isCompleted = false;
+>    }
+>
+>    public boolean isCompleted() {
+>        return isCompleted;
+>    }
+>
+>    public void markAsCompleted() {
+>        this.isCompleted = true;
+>    }
+>
+>    public String getTitle() {
+>        return title;
+>    }
+>}
+>```
+>**`TodoListManager.java`**  
+>```java
+>import java.util.ArrayList;
+>import java.util.List;
+>
+>public class TodoListManager {
+>    private List<Todo> todos;
+>
+>    public TodoListManager() {
+>        this.todos = new ArrayList<>();
+>    }
+>
+>    public void addTodo(String title) {
+>        todos.add(new Todo(title));
+>        System.out.println("새로운 할 일이 추가되었습니다: " + title);
+>    }
+>
+>    public void listTodos() {
+>        if (todos.isEmpty()) {
+>            System.out.println("할 일이 없습니다.");
+>            return;
+>        }
+>        System.out.println("--- 할 일 목록 ---");
+>        for (int i = 0; i < todos.size(); i++) {
+>            Todo todo = todos.get(i);
+>            String status = todo.isCompleted() ? "[완료]" : "[미완료]";
+>            System.out.println(String.format("%d. %s %s", i + 1, status, todo.getTitle()));
+>        }
+>        System.out.println("-----------------");
+>    }
+>
+>    public void completeTodo(int index) {
+>        if (index > 0 && index <= todos.size()) {
+>            todos.get(index - 1).markAsCompleted();
+>            System.out.println("할 일이 완료되었습니다.");
+>        } else {
+>            System.out.println("유효하지 않은 번호입니다.");
+>        }
+>    }
+>}
+>```
+>
+> 4.  위에서 제공된 완성된 코드를 각 파일에 붙여 넣으세요.
 
 ---
 

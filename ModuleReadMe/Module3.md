@@ -16,17 +16,17 @@
 >1.  IntelliJ에서 **`File`** >  **`New`**  >  **`Project`** 를 선택해 새 프로젝트를 만듭니다.
 >2.  `module3`과 같은 이름으로 프로젝트를 생성하되, 샘플 코드는 만들지 않습니다.
 >3.  `src` 폴더에 `Main.java`, `Todo.java`, `TodoListManager.java` 세 클래스 파일을 만듭니다.
-     
+>     
 >**`Main.java`**
-```java
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        TodoListManager manager = new TodoListManager();
-        Scanner scanner = new Scanner(System.in);
-        boolean running = true;
-
+>```java
+>import java.util.Scanner;
+>
+>public class Main {
+>    public static void main(String[] args) {
+>        TodoListManager manager = new TodoListManager();
+>        Scanner scanner = new Scanner(System.in);
+>        boolean running = true;
+>
         System.out.println("간단한 To-Do 리스트 앱을 시작합니다.");
 
         while (running) {

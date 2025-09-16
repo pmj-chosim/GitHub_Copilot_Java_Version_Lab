@@ -473,7 +473,9 @@ java -jar target/calculator-server-0.0.1-SNAPSHOT.jar
 <img width="812" height="511" alt="image" src="https://github.com/user-attachments/assets/9998c7c9-30f8-41c2-b283-bda6bec66d31" />  <br>  
   
 
-서버가 정상적으로 실행되면 터미널에 Spring Boot 로고와 함께 시작 로그가 나타납니다.
+서버가 정상적으로 실행되면 터미널에 Spring Boot 로고와 함께 시작 로그가 나타납니다.  
+<img width="772" height="636" alt="image" src="https://github.com/user-attachments/assets/f3422539-a48d-4c11-bba2-828bd879a479" />  
+  
 
 #### **2. Inspector로 테스트하기**
 **Inspector**는 실행 중인 MCP 서버에 연결해서 어떤 도구들이 있는지 확인하고 직접 호출하며 테스트할 수 있는 편리한 웹 기반 도구입니다.  

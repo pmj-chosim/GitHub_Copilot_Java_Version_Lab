@@ -35,7 +35,8 @@
 실습 전, 실습을 할 수 있도록 새로운 프로젝트를 먼저 열어 봅니다.  
 
 IntelliJ에서 `File` >  `New` > `Project` 를 통해 프로젝트를 만듭니다.  
-프로젝트명과 Java 버전은 상관없으나, 아래와 같이 `module1` 이름과 `17` 버전을 사용하길 권장드립니다. 샘플 코드 추가를 꼭 선택해주세요.  
+프로젝트명과 Java 버전은 상관없으나, 아래와 같이 `module1` 이름과 `17` 버전을 사용하길 권장드립니다. (다른 Java 버전을 사용해도 실습에는 무관합니다.)     
+샘플 코드 추가를 꼭 선택해주세요.  
 <img width="976" height="523" alt="image" src="https://github.com/user-attachments/assets/1b711fa1-e1da-467c-be79-571425786704" />  
   
 

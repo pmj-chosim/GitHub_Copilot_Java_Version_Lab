@@ -11,7 +11,7 @@ GitHub Copilot은 복잡한 프레임워크 기반의 프로젝트에서 테스�
 
 * Java 17 버전이 없다면?
 > IntelliJ에서 설치할 수 있습니다.
-> `File` > `Project Structure` > `SDK` > `Download JDK..` 를 선택합니다.  
+> `File` > `Project Structure` > `SDK` > `Download JDK..` 를 선택합니다.  <br>  
 > <img width="980" height="627" alt="image" src="https://github.com/user-attachments/assets/20d23ada-fb26-4ac0-bdfe-d59195366dcb" />
 > Java 버전을 17로 선택하고, 선호하는 벤더사를 선택해주시면 됩니다. 선호하는 벤더사가 없다면 `Microsoft OpenSDK`로 선택해주세요.  
 > <img width="568" height="539" alt="image" src="https://github.com/user-attachments/assets/88170831-485d-46db-9c72-4f9a8962141a" />

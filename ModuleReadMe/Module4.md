@@ -11,17 +11,22 @@ GitHub Copilot은 복잡한 프레임워크 기반의 프로젝트에서 테스�
 
 * Java 17 버전이 없다면?
 > IntelliJ에서 설치할 수 있습니다.
-> `File` > `Project Structure` > `SDK` > `Download JDK..`
-<img width="980" height="627" alt="image" src="https://github.com/user-attachments/assets/20d23ada-fb26-4ac0-bdfe-d59195366dcb" />
+> `File` > `Project Structure` > `SDK` > `Download JDK..` 를 선택합니다.  
+> <img width="980" height="627" alt="image" src="https://github.com/user-attachments/assets/20d23ada-fb26-4ac0-bdfe-d59195366dcb" />
+> Java 버전을 17로 선택하고, 선호하는 벤더사를 선택해주시면 됩니다. 선호하는 벤더사가 없다면 `Microsoft OpenSDK`로 선택해주세요.  
+> <img width="568" height="539" alt="image" src="https://github.com/user-attachments/assets/88170831-485d-46db-9c72-4f9a8962141a" />
+  
+  
 
-
-터미널창에 현재 GitHub 레포지토리 내용을 clone합니다.  
+터미널창에 현재 GitHub 레포지토리 내용을 clone합니다. 
+> 또는 직접 베이스 코드를 붙여 넣어서 만드실 수 있습니다. [모듈4 Spring Boot 베이스 코드 만들기]()
 ```bash
 git clone https://github.com/pmj-chosim/GitHub_Copilot_Java_Version_Lab.git
 ```
 <img width="938" height="47" alt="image" src="https://github.com/user-attachments/assets/06f95dec-247c-4094-afc6-664fb36300d8" />  
 
-IntelliJ에서 `File` > `Open`을 통해 방금 clone한 폴더를 열어 주세요.  
+IntelliJ에서 `File` > `Open`을 통해 방금 clone한 폴더를 열어 주세요.    
+    
 
 ---
 

@@ -1,4 +1,19 @@
-# GitHubCopilot_Develop_Java  
+# GitHubCopilot_Develop_Java    
+
+이 모듈에서는 자신의 GitHub Copilot 요금제 모델을 확인하고, IntelliJ IDE에 GitHub Copilot을 함께 설치해봅니다.  
+
+## 0. GitHub Copilot 요금제 확인하기  
+[GitHub](https://github.com/)에 접속한 후 로그인합니다.  
+
+로그인 후 우측 상단에 있는 프로필 사진을 클릭합니다.  
+<img width="798" height="742" alt="image" src="https://github.com/user-attachments/assets/8d2498d7-a58f-46f6-a40a-73de821f505e" />  <br>
+
+`Settings`를 클릭합니다.  <br>  
+<img width="981" height="617" alt="image" src="https://github.com/user-attachments/assets/6a4777d1-cbdc-4b62-b398-d22e3a4731ca" />  <br>  
+`Access`의 `Licensing`을 선택합니다.  
+
+`Current GitHub base plan` 섹션에서 현재 계정의 플랜을 확인할 수 있습니다.  
+<br>
 
 ## 1. IntelliJ에 GitHub Copilot 설치하기  
 

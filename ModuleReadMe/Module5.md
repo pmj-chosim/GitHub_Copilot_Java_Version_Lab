@@ -18,7 +18,7 @@ IntelliJ에서 이전 Module4에서 사용한 Spring Boot 프로젝트가 열려
 
 먼저 현재 코드베이스를 분석하고 리팩터링할 부분을 찾아봅시다.
 
-1.  IntelliJ에서 **코파일럿 채팅창**을 열고 모드가 **`Ask`**로 되어있는지 확인합니다.
+1.  IntelliJ에서 **코파일럿 채팅창**을 열고 모드가 `Ask`로 되어있는지 확인합니다.
 2.  `repository/TodoRepository.java` 파일을 엽니다.
 3.  채팅창에 `@file TodoRepository.java 이 파일에서 성능을 개선할 수 있는 부분을 찾아줘`라고 입력해 코드 분석을 요청하세요.
 
@@ -30,8 +30,8 @@ IntelliJ에서 이전 Module4에서 사용한 Spring Boot 프로젝트가 열려
 
 1.  `repository/TodoRepository.java` 파일의 `findAll` 메서드를 Stream API를 사용하지 않는 `foreach` 루프로 변경하세요.
     * 예를 들어, `return todos;`를 `List<Todo> allTodos = new ArrayList<>(); for (Todo todo : todos) { allTodos.add(todo); } return allTodos;`로 바꿔줍니다.
-2.  변경한 코드 블록에 마우스를 가져가면, **`Fix This`**라는 스마트 액션이 나타날 수 있습니다. 이를 클릭하여 코드를 자동으로 수정해 보세요.
-3.  만약 `Fix This`가 나타나지 않으면, 코드를 선택하고 **인라인 채팅**(`Ctrl + I` 또는 `Cmd + I`)을 연 후 `/fix 이 코드를 더 효율적으로 개선해줘`라고 입력하세요.
+2.  변경한 코드 블록에 마우스를 가져가면, `Fix This`라는 스마트 액션이 나타날 수 있습니다. 이를 클릭하여 코드를 자동으로 수정해 보세요.
+3.  만약 `Fix This`가 나타나지 않으면, 코드를 선택하고 **인라인 채팅**을 연 후 `/fix 이 코드를 더 효율적으로 개선해줘`라고 입력하세요.
     * **설명**: `/fix`는 **슬래시 명령어**로, 선택한 코드의 문제점을 찾고 수정할 것을 요청합니다.
 
 * `#file README.md "설명" 섹션에 "이 API는 Spring Boot를 활용해 할 일 목록을 JSON 형식으로 제공합니다."라고 추가해줘.`라고 입력합니다.

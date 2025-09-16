@@ -494,6 +494,8 @@ java -jar target/calculator-server-0.0.1-SNAPSHOT.jar
     <img width="1918" height="907" alt="image" src="https://github.com/user-attachments/assets/630b2e06-99ab-433e-8766-ace4ae4ee968" />  <br>  <br>
 
 
-연결에 성공하면 Inspector 화면에서 `calculatorService`에 구현한 `add`, `subtract` 같은 도구 목록을 확인할 수 있습니다. 도구를 선택하고 필요한 숫자 값을 입력한 뒤 실행하면 서버로부터 받은 결과가 화면에 표시됩니다.
+연결에 성공하면 Inspector 화면에서 `calculatorService`에 구현한 `add`, `subtract` 같은 도구 목록을 확인할 수 있습니다. 도구를 선택하고 필요한 숫자 값을 입력한 뒤 실행하면 서버로부터 받은 결과가 화면에 표시됩니다.  <br>  
+<img width="1505" height="797" alt="image" src="https://github.com/user-attachments/assets/0ce7789b-567c-4763-b4f4-587c6528724a" />  <br>  
+
 
 이제 여러분만의 Java 기반 MCP 서버를 성공적으로 구축하고 테스트까지 완료했습니다!

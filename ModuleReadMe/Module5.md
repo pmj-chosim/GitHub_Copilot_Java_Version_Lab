@@ -20,7 +20,7 @@ IntelliJ에서 이전 Module4에서 사용한 Spring Boot 프로젝트가 열려
 
 1.  IntelliJ에서 **코파일럿 채팅창**을 열고 모드가 `Ask`로 되어있는지 확인합니다.
 2.  `repository/TodoRepository.java` 파일을 엽니다.
-3.  채팅창에 `@file TodoRepository.java 이 파일에서 성능을 개선할 수 있는 부분을 찾아줘`라고 입력해 코드 분석을 요청하세요.
+3.  채팅창에 `#file TodoRepository.java 이 파일에서 성능을 개선할 수 있는 부분을 찾아줘`라고 입력해 코드 분석을 요청하세요.
 
 ---
 

@@ -1,4 +1,4 @@
-# GitHub Copilot을 사용하여 기존 코드 리팩토링
+# 5. GitHub Copilot을 사용하여 기존 코드 리팩토링
 
 GitHub Copilot은 기존 코드의 품질, 성능, 가독성, 유지보수성을 개선하는 데 도움을 줍니다. 이 연습에서는 GitHub Copilot을 사용하여 기존 자바 Spring Boot 애플리케이션의 특정 부분을 리팩터링하고 개선합니다.
 

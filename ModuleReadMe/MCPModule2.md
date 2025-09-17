@@ -1,4 +1,4 @@
-### **IntelliJ에서  Atlassian Confluence(Confluence MCP) 사용 설정하기**
+# **IntelliJ에서  Atlassian Confluence(Confluence MCP) 사용 설정하기**
 
 이 가이드는 IntelliJ IDEA의 GitHub Copilot 기능과 연동하여, Atlassian Confluence의 내용을 MCP(Model Context Protocol)를 통해 활용할 수 있도록 설정하는 방법을 안내합니다. 로컬 환경에서 Docker(또는 Podman)를 사용하여 Atlassian MCP 서버를 실행하는 것을 기준으로 합니다.
 

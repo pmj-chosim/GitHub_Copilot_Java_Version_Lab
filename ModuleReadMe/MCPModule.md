@@ -1,4 +1,4 @@
-### **Java와 Spring Boot로 MCP 서버 구축하기 (로컬 개발 가이드)**
+# **Java와 Spring Boot로 MCP 서버 구축하기 (로컬 개발 가이드)**
 
 로컬 PC에서 직접 MCP(Model Context Protocol) 서버를 실행하며 개발하고 테스트하는 방법을 알아봅니다. 이 가이드에서는 Java와 Spring Boot를 사용해 간단한 계산기 서버를 만들어 보겠습니다.
 

@@ -69,7 +69,7 @@ IntelliJ에서 `File` > `Open`을 통해 방금 clone한 폴더를 열어 주세
 4.  마우스 우클릭 > `GitHub Copilot` > `Generate Tests`를 선택합니다.
 5.  코파일럿이 채팅창에 테스트 코드 스니펫을 제안하면, 이를 복사하여 `TodoControllerTest.java` 붙여 넣습니다.
   
-GitHub Copilot이 완벽하게 잘 작동하는 코드를 주지 않을 수 있습니다. GitHub Copilot이 제공한 코드를 채팅창에서 질문을 하고, 먼저 이해합니다.  
+GitHub Copilot이 완벽하게 잘 작동하는 코드를 주지 않을 수 있습니다. GitHub Copilot이 제공한 코드를 채팅창에서 질문해 먼저 이해합니다.  
 이후, GitHub Copilot이 제안한 코드에서 일부만 수용을 하거나 채팅 등을 통해 수정해 나갑니다.  
   
 

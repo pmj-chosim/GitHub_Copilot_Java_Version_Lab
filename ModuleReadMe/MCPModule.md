@@ -499,3 +499,5 @@ java -jar target/calculator-server-0.0.1-SNAPSHOT.jar
 
 
 이제 여러분만의 Java 기반 MCP 서버를 성공적으로 구축하고 테스트까지 완료했습니다!
+
+MCP 클라이언트 구축 실습도 하고 싶다면 [MCP 클라이언트](https://github.com/microsoft/mcp-for-beginners/blob/main/translations/ko/03-GettingStarted/02-client/README.md) 바탕으로 진행할 수 있습니다.  

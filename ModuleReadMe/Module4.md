@@ -1,4 +1,4 @@
-# 4.GitHub Copilot을 활용한 단위 테스트 개발
+<img width="1060" height="633" alt="image" src="https://github.com/user-attachments/assets/685a8f0c-be83-40d4-8879-1042ab16dab5" /># 4.GitHub Copilot을 활용한 단위 테스트 개발
 ### GitHub Copilot을 사용한 단위 테스트 개발
 
 GitHub Copilot은 복잡한 프레임워크 기반의 프로젝트에서 테스트 코드를 작성하는 과정을 크게 가속화합니다. 이 연습에서는 Spring Boot 프로젝트에 대한 단위 테스트를 개발하는 방법을 배웁니다.  
@@ -62,9 +62,11 @@ IntelliJ에서 `File` > `Open`을 통해 방금 clone한 폴더를 열어 주세
 
 이번에는 **스마트 액션**을 사용해 `TodoController`에 대한 테스트 코드를 제안받아 봅시다.
 
-1.  `TodoController.java` 파일을 엽니다.
-2.  `getTodos()` 메서드를 마우스로 드래그해서 선택하세요.
-3.  마우스 우클릭 > `GitHub Copilot` > `Generate Tests`를 선택합니다.
-4.  코파일럿이 채팅창에 테스트 코드 스니펫을 제안하면, 이를 복사하여 `TodoControllerTest.java` 파일을 직접 만들어 붙여 넣습니다.
+1.  `.\src\test\java\com\example\demo` 경로에 `TodoControllerTest.java` 파일을 만듭니다.  <br>  
+<img width="1060" height="633" alt="image" src="https://github.com/user-attachments/assets/6cee008c-562e-43d6-aee3-fde3b40eeac0" />  <br>  
+2.  `TodoController.java` 파일을 엽니다.
+3.  `getTodos()` 메서드를 마우스로 드래그해서 선택하세요.
+4.  마우스 우클릭 > `GitHub Copilot` > `Generate Tests`를 선택합니다.
+5.  코파일럿이 채팅창에 테스트 코드 스니펫을 제안하면, 이를 복사하여 `TodoControllerTest.java` 붙여 넣습니다.  
   
 

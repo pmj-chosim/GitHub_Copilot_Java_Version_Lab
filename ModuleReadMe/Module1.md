@@ -1,4 +1,4 @@
-# GitHubCopilot_Develop_Java    
+# 1. GitHub Copilot 요금제 확인 및 설치하기 
 
 이 모듈에서는 자신의 GitHub Copilot 요금제 모델을 확인하고, IntelliJ IDE에 GitHub Copilot을 함께 설치해봅니다.  
 

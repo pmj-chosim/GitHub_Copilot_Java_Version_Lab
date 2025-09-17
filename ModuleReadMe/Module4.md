@@ -64,7 +64,7 @@ IntelliJ에서 `File` > `Open`을 통해 방금 clone한 폴더를 열어 주세
 
 1.  `TodoController.java` 파일을 엽니다.
 2.  `getTodos()` 메서드를 마우스로 드래그해서 선택하세요.
-3.  **마우스 우클릭 > `GitHub Copilot` > `Generate Tests`**를 선택합니다.
+3.  마우스 우클릭 > `GitHub Copilot` > `Generate Tests`를 선택합니다.
 4.  코파일럿이 채팅창에 테스트 코드 스니펫을 제안하면, 이를 복사하여 `TodoControllerTest.java` 파일을 직접 만들어 붙여 넣습니다.
   
 

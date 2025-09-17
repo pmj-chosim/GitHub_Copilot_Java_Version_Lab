@@ -5,11 +5,11 @@
 
 ## GitHub Copilot을 활용한 Java 어플리케이션 개발  
 
-**모듈 1**:   
-**모듈 2**:  
-**모듈 3**:  
-**모듈 4**:  
-**모듈 5**:    
+**모듈 1**: GitHub Copilot 요금제 확인 및 설치하기   
+**모듈 2**: GitHub Copilot을 활용한 설명 및 문서화   
+**모듈 3**: GitHub Copilot을 활용한 코드 기능 개발   
+**모듈 4**: GitHub Copilot을 활용한 단위 테스트 개발    
+**모듈 5**: GitHub Copilot을 사용하여 기존 코드 리팩토링     
 
 ## MCP 실습  
 

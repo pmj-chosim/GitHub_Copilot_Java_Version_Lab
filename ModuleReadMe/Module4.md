@@ -1,4 +1,4 @@
-<img width="1060" height="633" alt="image" src="https://github.com/user-attachments/assets/685a8f0c-be83-40d4-8879-1042ab16dab5" /># 4.GitHub Copilot을 활용한 단위 테스트 개발
+# 4.GitHub Copilot을 활용한 단위 테스트 개발
 ### GitHub Copilot을 사용한 단위 테스트 개발
 
 GitHub Copilot은 복잡한 프레임워크 기반의 프로젝트에서 테스트 코드를 작성하는 과정을 크게 가속화합니다. 이 연습에서는 Spring Boot 프로젝트에 대한 단위 테스트를 개발하는 방법을 배웁니다.  

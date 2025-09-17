@@ -36,11 +36,12 @@ Accept 또는 거절한 이후, 다시 모드를 `Ask`로 변경합니다.
 
 이제 파악한 내용을 바탕으로 코드를 직접 개선해 봅시다.
 
-1.  `repository/TodoRepository.java` 파일의 `findAll` 메서드를 Stream API를 사용하지 않는 `foreach` 루프로 변경하세요.
-    * 예를 들어, `return todos;`를 `List<Todo> allTodos = new ArrayList<>(); for (Todo todo : todos) { allTodos.add(todo); } return allTodos;`로 바꿔줍니다.
-2.  변경한 코드 블록에 마우스를 가져가면, `Fix This`라는 스마트 액션이 나타날 수 있습니다. 이를 클릭하여 코드를 자동으로 수정해 보세요.
-3.  만약 `Fix This`가 나타나지 않으면, 코드를 선택하고 **인라인 채팅**을 연 후 `/fix 이 코드를 더 효율적으로 개선해줘`라고 입력하세요.
-    * **설명**: `/fix`는 **슬래시 명령어**로, 선택한 코드의 문제점을 찾고 수정할 것을 요청합니다.
+1.  `repository/TodoRepository.java` 파일에서 사진처럼 해당 내용을 드래그합니다.   <br>  
+    <img width="675" height="173" alt="image" src="https://github.com/user-attachments/assets/1487627b-1176-4c95-aa78-718c38fa7b5c" />
 
-* `#file README.md "설명" 섹션에 "이 API는 Spring Boot를 활용해 할 일 목록을 JSON 형식으로 제공합니다."라고 추가해줘.`라고 입력합니다.
-    * **설명**: `#file`은 **채팅 변수**로, 특정 파일을 지정해 작업을 요청할 수 있습니다. `Edit` 모드는 이 파일에만 작업을 수행합니다.
+2.  드래그한 코드 블록에서 마우스 우클릭 > `GitHub Copilot`을 선택하면, `Fix This`라는 스마트 액션이 나타날 수 있습니다. 이를 클릭하여 어떻게 수정하면 좋을지 코드를 받을 수 있습니다.    
+
+3.  만약 `Fix This`가 나타나지 않으면, 코드를 선택하고 **인라인 채팅**을 연 후 `/fix 이 코드를 더 효율적으로 개선해줘`라고 입력하세요.
+    * **설명**: `/fix`는 **슬래시 명령어**로, 선택한 코드의 문제점을 찾고 수정할 것을 요청합니다.  
+
+4. 두 내용을 종합해서 판단 후, 해당 코드 블록 부분을 수정합니다.  

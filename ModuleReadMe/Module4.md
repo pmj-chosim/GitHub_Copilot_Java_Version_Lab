@@ -73,5 +73,8 @@ GitHub Copilot이 완벽하게 잘 작동하는 코드를 주지 않을 수 있�
 
 코드 실행이 원활하지 않을 경우, Copilot에게 “왜 실패했는지 설명해줘”라고 요청할 수 있습니다.  
 이후, GitHub Copilot이 제안한 코드에서 일부만 수용을 하거나 채팅 등을 통해 수정해 나갑니다.  
+
+채팅 구문(채팅 참여자, 슬래쉬, 채팅 변수)를 활용하면 원하는 응답을 받기 더 용이합니다.  
+채팅 구문에 대해선 [여기 링크](https://hackernoon.com/lang/ko/github-copilot-%EC%B1%84%ED%8C%85-%EA%B5%AC%EB%AC%B8-%EC%B1%84%ED%8C%85-%EC%B0%B8%EA%B0%80%EC%9E%90-%EC%B1%84%ED%8C%85-%EB%B3%80%EC%88%98-%EB%B0%8F-%EC%8A%AC%EB%9E%98%EC%8B%9C-%EB%AA%85%EB%A0%B9%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)에서 다시 살펴보기 좋습니다.  
   
 

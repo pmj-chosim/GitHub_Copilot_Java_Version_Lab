@@ -102,7 +102,7 @@ public class TodoRepository {
 
 #### **service/TodoService.java** (비즈니스 로직)
 
-java```
+```java
 package com.example.demo.service;
 import com.example.demo.repository.Todo;
 import com.example.demo.repository.TodoRepository;

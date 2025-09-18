@@ -107,7 +107,7 @@ podman run --rm -p 8080:8080 my-springboot-app
 
 ---
 
-##MCP
+## MCP
 [이 링크의 레포지토리 참고](https://github.com/pmj-chosim/BasicMCP_3Types_Ex)
 
 

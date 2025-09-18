@@ -20,7 +20,7 @@ GitHub Copilot은 복잡한 프레임워크 기반의 프로젝트에서 테스�
   
 
 터미널창(git bash)에 현재 GitHub 레포지토리 내용을 clone합니다. 
-> 또는 직접 베이스 코드를 붙여 넣어서 만드실 수 있습니다. [모듈4 Spring Boot 베이스 코드 만들기]()
+> 또는 직접 베이스 코드를 붙여 넣어서 만드실 수 있습니다. [모듈4 Spring Boot 베이스 코드 만들기](https://github.com/pmj-chosim/GitHub_Copilot_Java_Version_Lab/blob/main/ModuleReadMe/MoreAboutModule4.md)
 ```bash
 git clone https://github.com/pmj-chosim/GitHub_Copilot_Java_Version_Lab.git
 ```

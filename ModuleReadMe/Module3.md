@@ -166,5 +166,16 @@
 2. 커서를 메서드 본문 안에 둔 다음, 엔터를 누르면 GitHub Copilot이 자동으로 코드를 제시해줍니다. <br>
 <img width="750" height="271" alt="image" src="https://github.com/user-attachments/assets/9e3265a7-4533-43e8-af54-3932839f77ba" />  <br>
   
-3. `Tab` 버튼을 눌러 제안된 코드를 수락합니다.   
+3. `Tab` 버튼을 눌러 제안된 코드를 수락합니다.
+
+
+---
+
+#### **3단계: GitHub Copilot을 통해 커밋 메세지 추천받기**
+
+GitHub Copilot을 사용하면 커밋 메세지를 쉽게 추천 받을 수 있습니다.  <br>  
+IntelliJ에서 좌측의 `Commit`을 클릭한 후, commit하고 싶은 내용들을 선택합니다.  
+그 다음 Copilot 버튼을 눌러 Commit을 추천받을 수 있습니다.  <br>
+<img width="457" height="821" alt="image" src="https://github.com/user-attachments/assets/6245beed-110c-431a-bdb6-92c0954364b2" />
+
 

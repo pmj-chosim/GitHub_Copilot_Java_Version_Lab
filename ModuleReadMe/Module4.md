@@ -46,7 +46,7 @@ IntelliJ에서 `File` > `Open`을 통해 방금 clone한 폴더를 열어 주세
 
 1.  IntelliJ에서 코파일럿 채팅창을 열고 모드를 `Agent`로 변경합니다.
 2.  채팅창에 아래 프롬프트를 입력하여 `TodoService`를 테스트할 파일을 자동으로 생성하도록 요청하세요.
-    * `test 폴더의 com.example.demo 패키지 안에 TodoServiceTest.java 파일을 생성해줘. 파일에 JUnit 5 테스트 클래스 스텁을 추가해줘.`
+    * `/tests test 폴더의 com.example.demo 패키지 안에 TodoServiceTest.java 파일을 생성해줘. 파일에 JUnit 5 테스트 클래스 스텁을 추가해줘.`
 3.  `Agent`가 작업을 완료하면 생성된 `TodoServiceTest.java` 파일을 확인합니다.
 
 #### 3단계: 인라인 채팅으로 테스트 코드 작성하기

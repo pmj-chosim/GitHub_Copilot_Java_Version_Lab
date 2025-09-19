@@ -94,25 +94,50 @@ public class Todo {
 
 `TodoListManager.java` 파일에 아래 내용을 붙여 넣습니다.  
 ```java
-public class Todo {
-    private String title;
-    private boolean isCompleted;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Todo(String title) {
-        this.title = title;
-        this.isCompleted = false;
+public class TodoListManager {
+    private List<Todo> todos;
+
+    public TodoListManager() {
+        this.todos = new ArrayList<>();
     }
 
-    public boolean isCompleted() {
-        return isCompleted;
+    // 새로운 할 일을 추가하는 메서드
+    public void addTodo(String title) {
+        Todo newTodo = new Todo(title);
+        todos.add(newTodo);
+        System.out.println("할 일이 추가되었습니다: " + title);
     }
 
-    public void markAsCompleted() {
-        this.isCompleted = true;
+    // 할 일 목록을 출력하는 메서드
+    public void listTodos() {
+        if (todos.isEmpty()) {
+            System.out.println("할 일이 없습니다.");
+            return;
+        }
+        System.out.println("할 일 목록:");
+        for (int i = 0; i < todos.size(); i++) {
+            Todo todo = todos.get(i);
+            String status = todo.isCompleted() ? "[완료]" : "[미완료]";
+            System.out.println((i + 1) + ". " + status + " " + todo.getTitle());
+        }
     }
 
-    public String getTitle() {
-        return title;
+    // 특정 할 일을 완료 상태로 바꾸는 메서드
+    public void completeTodo(int index) {
+        if (index < 1 || index > todos.size()) {
+            System.out.println("유효하지 않은 인덱스입니다.");
+            return;
+        }
+        Todo todo = todos.get(index - 1);
+        if (todo.isCompleted()) {
+            System.out.println("이미 완료된 할 일입니다: " + todo.getTitle());
+        } else {
+            todo.markAsCompleted();
+            System.out.println("할 일이 완료되었습니다: " + todo.getTitle());
+        }
     }
 }
 ```

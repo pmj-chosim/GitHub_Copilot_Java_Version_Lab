@@ -98,11 +98,11 @@ podman build -t my-springboot-app .
 
 *실행  
 ```
-docker run --rm -p 8080:8080 my-springboot-app
+docker run --d -p 8080:8080 my-springboot-app
 ```
 또는
 ```
-podman run --rm -p 8080:8080 my-springboot-app
+podman run --d -p 8080:8080 my-springboot-app
 ```
 
 ---

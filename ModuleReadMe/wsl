@@ -1,0 +1,88 @@
+### WSL에 Docker 설치하기 (Markdown 원본)
+
+WSL(Windows Subsystem for Linux)에서 Docker를 사용하는 가장 간편하고 권장되는 방법은 **Docker Desktop for Windows**를 설치하는 것입니다. 이 프로그램이 WSL 2와 완벽하게 연동되어 모든 과정을 관리해 줍니다.
+
+---
+
+### ## 방법 1: Docker Desktop 사용 (가장 쉬운 방법) 🥇
+
+#### **1. WSL 2 설치 확인 및 활성화**
+
+먼저 PowerShell을 **관리자 권한**으로 열고, 다음 명령어를 실행하여 WSL 2를 설치하거나 기본 버전으로 설정합니다. 대부분의 최신 Windows 10/11에는 WSL이 포함되어 있습니다.
+
+[코드]
+wsl --install
+[코드]
+
+이미 WSL이 설치된 경우, 아래 명령어로 최신 상태를 유지하고 WSL 2를 기본으로 설정하세요.
+
+[코드]
+wsl --update
+wsl --set-default-version 2
+[코드]
+
+#### **2. Docker Desktop 다운로드 및 설치**
+
+1.  **[Docker Desktop 공식 홈페이지](https://www.docker.com/products/docker-desktop/)**에 접속하여 'Docker Desktop for Windows'를 다운로드합니다.
+2.  다운로드한 파일을 실행하고, 설치 화면에서 **"Use WSL 2 instead of Hyper-V (recommended)"** 옵션이 체크되어 있는지 확인 후 설치를 진행합니다.
+
+#### **3. WSL 연동 설정**
+
+1.  설치가 완료되면 Docker Desktop을 실행합니다.
+2.  우측 상단의 설정 아이콘(⚙️)을 클릭한 후, **Resources > WSL Integration** 탭으로 이동합니다.
+3.  Docker를 사용할 리눅스 배포판(예: `Ubuntu`)의 스위치를 켜고 **Apply & Restart** 버튼을 누릅니다. 
+
+#### **4. 설치 확인**
+
+이제 WSL 터미널(Ubuntu 등)을 열고, 아래 명령어를 차례로 입력하여 Docker가 정상적으로 작동하는지 확인합니다.
+
+[코드]
+docker --version
+docker run hello-world
+[코드]
+
+위 `hello-world` 명령이 성공적으로 실행되면, 모든 설치 과정이 완료된 것입니다.
+
+---
+
+### ## 방법 2: WSL에 Docker Engine 직접 설치 (고급 사용자용)
+
+이 방법은 Docker Desktop 없이 WSL 환경 내에 직접 Docker를 설치하는 방식입니다. WSL을 시작할 때마다 수동으로 Docker 서비스를 켜야 하는 번거로움이 있습니다.
+
+#### **1. 기존 Docker 패키지 제거**
+[코드]
+sudo apt-get remove docker docker-engine docker.io containerd runc
+[코드]
+
+#### **2. APT 저장소 설정 및 Docker 설치**
+[코드]
+sudo apt-get update
+sudo apt-get install -y ca-certificates curl gnupg lsb-release
+
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  
+sudo apt-get update
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+[코드]
+
+#### **3. Docker 서비스 시작 및 권한 부여**
+
+WSL 터미널을 열 때마다 아래 명령어로 Docker 데몬을 직접 실행해야 합니다.
+[코드]
+sudo service docker start
+[코드]
+`sudo` 없이 `docker` 명령어를 사용하려면, 현재 사용자를 `docker` 그룹에 추가하세요.
+[코드]
+sudo usermod -aG docker $USER
+[코드]
+권한 적용을 위해 터미널을 완전히 닫았다가 다시 열어주세요.
+
+#### **4. 설치 확인**
+[코드]
+docker run hello-world
+[코드]

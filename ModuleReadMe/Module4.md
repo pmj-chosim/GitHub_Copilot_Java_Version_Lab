@@ -27,6 +27,22 @@ git clone https://github.com/pmj-chosim/GitHub_Copilot_Java_Version_Lab.git
 <img width="938" height="47" alt="image" src="https://github.com/user-attachments/assets/06f95dec-247c-4094-afc6-664fb36300d8" />  
 
 IntelliJ에서 `File` > `Open`을 통해 방금 clone한 폴더를 열어 주세요.    
+
+개발하기 전 코드가 잘 실행되는 지 먼저 확인합니다.  
+
+터미널 창을 열어, 현재 복사된 코드가 있는 경로에서 docker 명령어를 통해 코드를 실행합니다.  
+<img width="1607" height="491" alt="image" src="https://github.com/user-attachments/assets/1d525dd7-fee4-419d-ac72-825950007357" />  
+
+```bash
+docker build -t my-java-app .
+```
+```bash
+docker run --rm my-java-app
+```   
+
+컨테이너가 잘 실행되고 나면
+<img width="655" height="206" alt="image" src="https://github.com/user-attachments/assets/65cb1d9e-a682-4b02-ae02-4e7541505bb2" />  
+http://localhost:8080/api/todos 에서 예제 코드가 작동하는 것을 확인할 수 있습니다.  
     
 
 ---

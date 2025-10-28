@@ -213,7 +213,7 @@ class TodoControllerTest {
     // 4단계: Copilot을 호출할 커서를 여기에 둡니다.
 }
 ```
-3. `getTodos` (GET 요청) 테스트 코드 생성: `// 4단계: ...` 주석 아래에 커서를 두고, 인라인 채팅(Ctrl+I 또는 Cmd+I)을 열어 요청합니다.
+3. `getTodos` (GET 요청) 테스트 코드 생성: `// 4단계: ...` 주석 아래에 커서를 두고, 인라인 채팅(Ctrl+I 또는 Cmd+I)을 열어 요청합니다.  
   getTodos 메서드에 대한 테스트 코드를 BDDMockito 스타일로 만들어줘.  
   >"운동하기", "공부하기"가 포함된 Todo 리스트를 준비해 줘.  
   >todoService.getTodos()가 호출되면(given) 이 리스트를 반환하도록 설정해 줘.  
@@ -222,7 +222,7 @@ class TodoControllerTest {
 
 Copilot이 제안한 코드를 수락합니다.  
 
-4. `createTodo` (POST 요청) 테스트 코드 생성: 방금 생성된 `getTodosTest()` 메서드 아래에 커서를 두고, 다시 인라인 채팅을 열어 요청합니다.
+4. `createTodo` (POST 요청) 테스트 코드 생성: 방금 생성된 `getTodosTest()` 메서드 아래에 커서를 두고, 다시 인라인 채팅을 열어 요청합니다.  
 
 이번엔 `createTodo` 메서드 테스트 코드를 만들어줘.  
 > "새 할일"이라는 title을 가진 Todo 객체를 준비해 줘.  

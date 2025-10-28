@@ -56,6 +56,12 @@ cd calculator-server
 rm -rf src/test/java
 ```
 
+위 압축 파일에 네트워크 제한으로 접근할 수 없다면
+```
+git clone https://github.com/pmj-chosim/Java_base
+```
+을 통해서 다운 받아 주세요.  
+
 이제 프로젝트의 의존성을 관리하는 `pom.xml` 파일을 수정해야 합니다. 파일 전체를 아래 내용으로 교체해 주세요. Spring AI와 MCP 서버 관련 라이브러리를 추가하는 설정입니다.
 
 ```xml

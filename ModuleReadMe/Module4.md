@@ -62,35 +62,258 @@ http://localhost:8080/api/todos 에서 예제 코드가 작동하는 것을 확�
 
 1.  IntelliJ에서 코파일럿 채팅창을 열고 모드를 `Agent`로 변경합니다.
 2.  채팅창에 아래 프롬프트를 입력하여 `TodoService`를 테스트할 파일을 자동으로 생성하도록 요청하세요.
-    * `/tests test 폴더의 com.example.demo 패키지 안에 TodoServiceTest.java 파일을 생성해줘. 파일에 JUnit 5 테스트 클래스 스텁을 추가해줘.`
+    * `/tests test 폴더의 com.example.demo.service 패키지 안에 TodoServiceTest.java 파일을 생성해줘. 파일에 JUnit 5와 Mockito 테스트 클래스 스텁을 추가해줘.`
 3.  `Agent`가 작업을 완료하면 생성된 `TodoServiceTest.java` 파일을 확인합니다.
 
-#### 3단계: 인라인 채팅으로 테스트 코드 작성하기
+#### 3단계: 인라인 채팅으로 Service 단위 테스트 작성하기
 
-`TodoServiceTest.java` 파일에 대한 테스트 코드를 작성해 봅시다.
+이 테스트는 TodoService.java 파일을 수정하는 것이 아니라, `src/test/java/com/example/demo/service` 폴더에 있는 `TodoServiceTest.java` 파일에 작성합니다.
 
-1.  `TodoServiceTest.java` 파일을 열고 클래스 본문 안에 커서를 둡니다.
-2.  `마우스 우클릭` > `GitHub Copilot` > `Copilot: Open Inline Chat`을 눌러 **인라인 채팅**을 활성화합니다.
-3.  채팅창에 `addTodo 메서드에 대한 단위 테스트를 만들어줘. "새로운 할 일을 추가하면 목록 크기가 1 증가해야 한다"는 것을 확인해줘.`와 같이 요청합니다.
-4.  코파일럿이 제안하는 코드를 받아들여 메서드를 완성합니다.
 
-#### 4단계: 스마트 액션으로 테스트 코드 제안받기
+1.  (2단계에서) Agent가 생성했거나, 혹은 직접 만든 `src/test/java/com/example/demo/service/TodoServiceTest.java` 파일을 엽니다.
+2. 파일이 비어있다면, 먼저 Mockito를 사용하기 위한 테스트 기본 구조를 복사하여 붙여넣습니다.
+```bash
+package com.example.demo.service;
 
-이번에는 **스마트 액션**을 사용해 `TodoController`에 대한 테스트 코드를 제안받아 봅시다.
+import com.example.demo.repository.TodoRepository;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
-1.  `.\src\test\java\com\example\demo` 경로에 `TodoControllerTest.java` 파일을 만듭니다.  <br>  
-<img width="1060" height="633" alt="image" src="https://github.com/user-attachments/assets/6cee008c-562e-43d6-aee3-fde3b40eeac0" />  <br>  
-2.  `TodoController.java` 파일을 엽니다.
-3.  `getTodos()` 메서드를 마우스로 드래그해서 선택하세요.
-4.  마우스 우클릭 > `GitHub Copilot` > `Generate Tests`를 선택합니다.
-5.  코파일럿이 채팅창에 테스트 코드 스니펫을 제안하면, 이를 복사하여 `TodoControllerTest.java` 붙여 넣습니다.
-  
-GitHub Copilot이 완벽하게 잘 작동하는 코드를 주지 않을 수 있습니다. GitHub Copilot이 제공한 코드를 채팅창에서 질문해 먼저 이해합니다.  
+@ExtendWith(MockitoExtension.class) // Mockito 사용 선언
+class TodoServiceTest {
 
-코드 실행이 원활하지 않을 경우, Copilot에게 “왜 실패했는지 설명해줘”라고 요청할 수 있습니다.  
-이후, GitHub Copilot이 제안한 코드에서 일부만 수용을 하거나 채팅 등을 통해 수정해 나갑니다.  
+    @Mock
+    private TodoRepository todoRepository; // 가짜 Repository
 
-채팅 구문(채팅 참여자, 슬래쉬, 채팅 변수)를 활용하면 원하는 응답을 받기 더 용이합니다.  
-채팅 구문에 대해선 [여기 링크](https://hackernoon.com/lang/ko/github-copilot-%EC%B1%84%ED%8C%85-%EA%B5%AC%EB%AC%B8-%EC%B1%84%ED%8C%85-%EC%B0%B8%EA%B0%80%EC%9E%90-%EC%B1%84%ED%8C%85-%EB%B3%80%EC%88%98-%EB%B0%8F-%EC%8A%AC%EB%9E%98%EC%8B%9C-%EB%AA%85%EB%A0%B9%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)에서 다시 살펴보기 좋습니다.  
+    @InjectMocks
+    private TodoService todoService; // 테스트 대상 Service (가짜 Repo 주입)
+
+    // 3단계: Copilot을 호출할 커서를 여기에 둡니다.
+
+}
+```
+<img width="1497" height="772" alt="image" src="https://github.com/user-attachments/assets/0ea46c7d-c729-4fcc-a61c-8afa96bab409" />
+
+3. 방금 붙여넣은 코드에서 // 3단계: ... 주석이 있는 곳에 커서를 둡니다.  
+
+4. 마우스 우클릭 > GitHub Copilot > Copilot: Open Inline Chat을 눌러 인라인 채팅을 활성화합니다.  
+
+5. 채팅창에 아래와 같이 구체적인 프롬프트를 입력합니다. (BDDMockito 스타일을 명시하면 'given-when-then' 형식의 깔끔한 코드를 제안해 줍니다.)  
+  addTodo 메서드에 대한 단위 테스트를 BDDMockito 스타일로 만들어줘.
+
+  > "새 할일"이라는 title이 주어졌을 때,
+  > repository.save가 any(Todo.class)로 호출되면, title이 "새 할일"이고 completed가 false인 Todo 객체를 반환하도록 given (stub) 처리해줘.
+  > service.addTodo가 "새 할일"로 호출되면 (when)
+  > 반환된 Todo 객체가 null이 아니고, title이 "새 할일", completed가 false인지 assert 해줘.
+  > 마지막으로 repository.save가 1번 호출되었는지 verify 해줘.
+
+6. 코파일럿이 위 요구사항에 맞는 테스트 메서드 코드를 제안하면, Accept를 눌러 코드를 삽입합니다.  
+
+7. (결과 확인) 성공적으로 코드가 삽입되면 TodoServiceTest.java 파일은 다음과 같은 모습이 됩니다. IntelliJ의 Run 버튼(메서드 옆 녹색 삼각형)을 눌러 테스트가 통과(PASS)하는지 확인합니다.  
+
+
+코드가 성공적으로 작동되지 않으면 채팅을 통해 트러블슈팅을 합니다. 아래와 같은 예시 코드가 나올 수 있도록 프롬프트를 통해 수정해 나갑니다.  
+
+예시 코드:
+```bash
+package com.example.demo.service;
+
+import com.example.demo.repository.Todo;
+import com.example.demo.repository.TodoRepository;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.BDDMockito.given;
+import static org.mockito.BDDMockito.then;
+
+@ExtendWith(MockitoExtension.class)
+class TodoServiceTest {
+
+    @Mock
+    private TodoRepository todoRepository;
+
+    @InjectMocks
+    private TodoService todoService;
+
+    @Test
+    @DisplayName("새로운 할 일을 추가하면 저장되고, completed는 false여야 한다")
+    void addTodoTest() {
+        // given (준비)
+        String title = "새 할일";
+        Todo todoToSave = new Todo();
+        todoToSave.setTitle(title);
+        todoToSave.setCompleted(false);
+
+        // todoRepository.save(any(Todo.class))가 호출되면, todoToSave 객체를 반환하라고 설정
+        given(todoRepository.save(any(Todo.class))).willReturn(todoToSave);
+
+        // when (실행)
+        Todo result = todoService.addTodo(title);
+
+        // then (검증)
+        assertThat(result).isNotNull();
+        assertThat(result.getTitle()).isEqualTo(title);
+        assertThat(result.isCompleted()).isFalse();
+
+        // todoRepository.save가 1번 호출되었는지 검증
+        then(todoRepository).should().save(any(Todo.class));
+    }
+}
+```
+
+#### 4단계: 인라인 채팅으로 Controller 단위 테스트 작성하기  
+이제 API의 '창구' 역할을 하는 `TodoController`를 테스트할 차례입니다. 컨트롤러 테스트는 MockMvc라는 도구를 사용해, 마치 브라우저나 Postman이 API를 호출하는 것처럼 시뮬레이션합니다.
+
+1. 테스트 파일 생성: `src/test/java/com/example/demo/controller` 경로(폴더)에 `TodoControllerTest.java` 파일을 생성합니다.
+
+2. 테스트 기본 구조 붙여넣기: `TodoControllerTest.java` 파일을 열고, `MockMvc` 테스트에 필요한 기본 구조를 붙여넣습니다.  
+```bash
+package com.example.demo.controller;
+
+import com.example.demo.repository.Todo;
+import com.example.demo.service.TodoService;
+import com.fasterxml.jackson.databind.ObjectMapper; // JSON 처리를 위해 추가
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType; // MimeType을 위해 추가
+import org.springframework.test.web.servlet.MockMvc;
+
+import java.util.Arrays;
+import java.util.List;
+
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.BDDMockito.given;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
+@WebMvcTest(TodoController.class) // Controller 레이어만 테스트
+class TodoControllerTest {
+
+    @Autowired
+    private MockMvc mockMvc; // 웹 요청 시뮬레이터
+
+    @MockBean
+    private TodoService todoService; // 가짜 Service
+
+    @Autowired
+    private ObjectMapper objectMapper; // 객체 <-> JSON 변환기
+
+    // 4단계: Copilot을 호출할 커서를 여기에 둡니다.
+}
+```
+3. `getTodos` (GET 요청) 테스트 코드 생성: `// 4단계: ...` 주석 아래에 커서를 두고, 인라인 채팅(Ctrl+I 또는 Cmd+I)을 열어 요청합니다.
+  getTodos 메서드에 대한 테스트 코드를 BDDMockito 스타일로 만들어줘.
+  >"운동하기", "공부하기"가 포함된 Todo 리스트를 준비해 줘.
+  >todoService.getTodos()가 호출되면(given) 이 리스트를 반환하도록 설정해 줘.
+  >mockMvc.perform으로 /api/todos에 GET 요청을 보냈을 때(when),
+  >상태 코드가 isOk()이고, JSON 응답의 $[0].title이 "운동하기"인지 검증(then)해줘.
+
+Copilot이 제안한 코드를 수락합니다.  
+
+4. `createTodo` (POST 요청) 테스트 코드 생성: 방금 생성된 `getTodosTest()` 메서드 아래에 커서를 두고, 다시 인라인 채팅을 열어 요청합니다.
+
+이번엔 `createTodo` 메서드 테스트 코드를 만들어줘.
+> "새 할일"이라는 title을 가진 Todo 객체를 준비해 줘.
+> todoService.addTodo("새 할일")이 호출되면(given) 준비한 Todo 객체를 반환하도록 설정해 줘.
+> mockMvc.perform으로 /api/todos에 POST 요청을 보낼 거야. 요청 본문(content)은 objectMapper로 직렬화하고 contentType은 APPLICATION_JSON으로 설정해 줘.
+> 상태 코드가 isCreated()이고, JSON 응답의 title이 "새 할일"인지 검증(then)해줘.
+
+Copilot이 제안한 코드를 수락합니다.  
+
+5. (결과 확인) 모든 코드를 수락하면 TodoControllerTest.java 파일은 다음과 비슷한  모습이 됩니다. IntelliJ에서 Run 버튼을 눌러 2개의 테스트가 모두 통과하는지 확인합니다.
+
+```bash
+package com.example.demo.controller;
+
+import com.example.demo.repository.Todo;
+import com.example.demo.service.TodoService;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+
+import java.util.Arrays;
+import java.util.List;
+
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.BDDMockito.given;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
+@WebMvcTest(TodoController.class)
+class TodoControllerTest {
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @MockBean
+    private TodoService todoService;
+
+    @Autowired
+    private ObjectMapper objectMapper;
+
+    @Test
+    @DisplayName("GET /api/todos 요청 시 모든 할 일 목록을 반환한다")
+    void getTodosTest() throws Exception {
+        // given
+        Todo todo1 = new Todo();
+        todo1.setTitle("운동하기");
+        todo1.setCompleted(false);
+
+        Todo todo2 = new Todo();
+        todo2.setTitle("공부하기");
+        todo2.setCompleted(true);
+        List<Todo> todos = Arrays.asList(todo1, todo2);
+
+        given(todoService.getTodos()).willReturn(todos);
+
+        // when & then
+        mockMvc.perform(get("/api/todos"))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect(jsonPath("$[0].title").value("운동하기"))
+                .andExpect(jsonPath("$[1].title").value("공부하기"));
+    }
+
+    @Test
+    @DisplayName("POST /api/todos 요청 시 새 할 일을 생성한다")
+    void createTodoTest() throws Exception {
+        // given
+        Todo todoToCreate = new Todo();
+        todoToCreate.setTitle("새 할일");
+
+        Todo savedTodo = new Todo();
+        savedTodo.setTitle("새 할일");
+        savedTodo.setCompleted(false);
+
+        given(todoService.addTodo("새 할일")).willReturn(savedTodo);
+
+        // when & then
+        mockMvc.perform(post("/api/todos")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(todoToCreate))) // 객체를 JSON 문자열로 변환
+                .andExpect(status().isCreated())
+                .andExpect(jsonPath("$.title").value("새 할일"))
+                .andExpect(jsonPath("$.completed").value(false));
+    }
+}
+```
   
 

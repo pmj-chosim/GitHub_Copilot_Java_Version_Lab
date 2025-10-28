@@ -8,10 +8,10 @@ GitHub Copilot은 복잡한 프레임워크 기반의 프로젝트에서 테스�
 당신은 To-Do 앱 프로젝트를 맡은 개발자입니다. 코드는 이미 완성되었지만, 중요한 기능에 대한 단위 테스트가 부족합니다. GitHub Copilot의 도움을 받아 `TodoService` 클래스의 핵심 기능에 대한 단위 테스트를 작성해야 합니다.  
 
 #### 실습 준비
-이번 모듈 4와 모듈 5에서는 Java 17 버전으로 작성된 Spring Boot 앱 예제 코드를 사용합니다.  
+이번 모듈 4와 모듈 5에서는 Java 17 버전으로 작성된 Spring Boot 앱 예제 코드를 사용합니다. 
 
-* Java 17 버전이 없다면?
-> IntelliJ에서 설치할 수 있습니다.
+* Java 17 버전이 없다면? 
+> 컨테이너를 사용해 실행 가능하므로 꼭 설치하지 않아도 되지만, IntelliJ에서 설치할 수 있습니다.
 > `File` > `Project Structure` > `SDK` > `Download JDK..` 를 선택합니다.  <br>  
 > <img width="980" height="627" alt="image" src="https://github.com/user-attachments/assets/20d23ada-fb26-4ac0-bdfe-d59195366dcb" />
 > Java 버전을 17로 선택하고, 선호하는 벤더사를 선택해주시면 됩니다. 선호하는 벤더사가 없다면 `Microsoft OpenSDK`로 선택해주세요.  

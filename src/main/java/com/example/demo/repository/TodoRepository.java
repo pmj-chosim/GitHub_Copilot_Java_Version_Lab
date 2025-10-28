@@ -24,4 +24,9 @@ public class TodoRepository {
     public List<Todo> findAll() {
         return todos;
     }
+
+    public Todo save(Todo todo) {
+        todos.add(todo);
+        return todo;
+    }
 }

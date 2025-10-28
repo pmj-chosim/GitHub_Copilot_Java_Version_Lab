@@ -17,4 +17,14 @@ public class TodoService {
     public List<Todo> getTodos() {
         return todoRepository.findAll();
     }
+
+    public Todo addTodo(String title) {
+        if (title == null || title.isBlank()) {
+            throw new IllegalArgumentException("Title cannot be empty");
+        }
+        Todo newTodo = new Todo();
+        newTodo.setTitle(title);
+        newTodo.setCompleted(false); // 새로운 할 일은 항상 '미완료'로 시작
+        return todoRepository.save(newTodo);
+    }
 }

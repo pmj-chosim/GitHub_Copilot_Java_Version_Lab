@@ -11,11 +11,11 @@ GitHub Copilot은 복잡한 프레임워크 기반의 프로젝트에서 테스�
 이번 모듈 4와 모듈 5에서는 Java 17 버전으로 작성된 Spring Boot 앱 예제 코드를 사용합니다. 
 
 * Java 17 버전이 없다면? 
-> 컨테이너를 사용해 실행 가능하므로 꼭 설치하지 않아도 되지만, IntelliJ에서 설치할 수 있습니다.
-> `File` > `Project Structure` > `SDK` > `Download JDK..` 를 선택합니다.  <br>  
-> <img width="980" height="627" alt="image" src="https://github.com/user-attachments/assets/20d23ada-fb26-4ac0-bdfe-d59195366dcb" />
-> Java 버전을 17로 선택하고, 선호하는 벤더사를 선택해주시면 됩니다. 선호하는 벤더사가 없다면 `Microsoft OpenSDK`로 선택해주세요.  
-> <img width="568" height="539" alt="image" src="https://github.com/user-attachments/assets/88170831-485d-46db-9c72-4f9a8962141a" />
+> 컨테이너를 사용해 실행 가능하므로 꼭 설치하지 않아도 되지만, IntelliJ에서 설치할 수 있습니다.  
+> `File` > `Project Structure` > `SDK` > `Download JDK..` 를 선택합니다.  <br>   
+> <img width="980" height="627" alt="image" src="https://github.com/user-attachments/assets/20d23ada-fb26-4ac0-bdfe-d59195366dcb" />  
+> Java 버전을 17로 선택하고, 선호하는 벤더사를 선택해주시면 됩니다. 선호하는 벤더사가 없다면 `Microsoft OpenSDK`로 선택해주세요.    
+> <img width="568" height="539" alt="image" src="https://github.com/user-attachments/assets/88170831-485d-46db-9c72-4f9a8962141a" />  
   
   
 
@@ -214,22 +214,22 @@ class TodoControllerTest {
 }
 ```
 3. `getTodos` (GET 요청) 테스트 코드 생성: `// 4단계: ...` 주석 아래에 커서를 두고, 인라인 채팅(Ctrl+I 또는 Cmd+I)을 열어 요청합니다.
-  getTodos 메서드에 대한 테스트 코드를 BDDMockito 스타일로 만들어줘.
-  >"운동하기", "공부하기"가 포함된 Todo 리스트를 준비해 줘.
-  >todoService.getTodos()가 호출되면(given) 이 리스트를 반환하도록 설정해 줘.
-  >mockMvc.perform으로 /api/todos에 GET 요청을 보냈을 때(when),
-  >상태 코드가 isOk()이고, JSON 응답의 $[0].title이 "운동하기"인지 검증(then)해줘.
+  getTodos 메서드에 대한 테스트 코드를 BDDMockito 스타일로 만들어줘.  
+  >"운동하기", "공부하기"가 포함된 Todo 리스트를 준비해 줘.  
+  >todoService.getTodos()가 호출되면(given) 이 리스트를 반환하도록 설정해 줘.  
+  >mockMvc.perform으로 /api/todos에 GET 요청을 보냈을 때(when),  
+  >상태 코드가 isOk()이고, JSON 응답의 $[0].title이 "운동하기"인지 검증(then)해줘.  
 
 Copilot이 제안한 코드를 수락합니다.  
 
 4. `createTodo` (POST 요청) 테스트 코드 생성: 방금 생성된 `getTodosTest()` 메서드 아래에 커서를 두고, 다시 인라인 채팅을 열어 요청합니다.
 
-이번엔 `createTodo` 메서드 테스트 코드를 만들어줘.
-> "새 할일"이라는 title을 가진 Todo 객체를 준비해 줘.
-> todoService.addTodo("새 할일")이 호출되면(given) 준비한 Todo 객체를 반환하도록 설정해 줘.
-> mockMvc.perform으로 /api/todos에 POST 요청을 보낼 거야. 요청 본문(content)은 objectMapper로 직렬화하고 contentType은 APPLICATION_JSON으로 설정해 줘.
-> 상태 코드가 isCreated()이고, JSON 응답의 title이 "새 할일"인지 검증(then)해줘.
-
+이번엔 `createTodo` 메서드 테스트 코드를 만들어줘.  
+> "새 할일"이라는 title을 가진 Todo 객체를 준비해 줘.  
+> todoService.addTodo("새 할일")이 호출되면(given) 준비한 Todo 객체를 반환하도록 설정해 줘.  
+> mockMvc.perform으로 /api/todos에 POST 요청을 보낼 거야. 요청 본문(content)은 objectMapper로 직렬화하고 contentType은 APPLICATION_JSON으로 설정해 줘.  
+> 상태 코드가 isCreated()이고, JSON 응답의 title이 "새 할일"인지 검증(then)해줘.  
+ 
 Copilot이 제안한 코드를 수락합니다.  
 
 5. (결과 확인) 모든 코드를 수락하면 TodoControllerTest.java 파일은 다음과 비슷한  모습이 됩니다. IntelliJ에서 Run 버튼을 눌러 2개의 테스트가 모두 통과하는지 확인합니다.

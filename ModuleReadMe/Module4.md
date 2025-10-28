@@ -37,7 +37,7 @@ IntelliJ에서 `File` > `Open`을 통해 방금 clone한 폴더를 열어 주세
 docker build -t my-java-app .
 ```
 ```bash
-docker run --rm my-java-app
+docker run --rm -p 8080:8080 my-java-app
 ```   
 
 컨테이너가 잘 실행되고 나면

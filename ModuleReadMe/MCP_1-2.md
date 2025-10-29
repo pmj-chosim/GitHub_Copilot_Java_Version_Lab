@@ -13,7 +13,7 @@ MCP(Model Context Protocol)라는 **표준 규격**(USB-C)이 없었을 때는, 
 AI 발전 초기에도 그런 상황이었습니다.  
 
 그 예로,  
-#### 1. LangChain 라이브러리 사용 방식"이 있었습니다.
+### 1. LangChain 라이브러리 사용 방식"이 있었습니다.
 가장 대표적인 LangChain 프레임워크를 사용하려면, 개발자는 'LangChain 전용' 도구와 'LangChain 전용' AI를 만들어야 했습니다.   
   
 AI 에이전트와 연결하기 위해, 개발자는 순수 Python 함수(심부름 기능)를 LangChain의 Tool 클래스라는 '독자 규격(라이트닝 8핀)'으로 '포장'해야 했습니다.  
@@ -55,7 +55,7 @@ agent = initialize_agent(tools, llm, agent=AgentType.OPENAI_FUNCTIONS)
 한계점: 여기서 LangChain 라이브러리를 사용해서 만든 도구 `web_scraper_tool`은 LangChain 에이전트(AI)하고만 작동합니다. 다른 프레임워크(SDK, 예: Semantic Kernel)로 개발된 에이전트(AI)는 이 도구를 전혀 알아듣지 못했습니다.
 
 
-#### 2. 마찬가지로, "Semantic Kernel 라이브러리"를 사용해 도구와 AI를 연결하는 방법도 있었습니다.  
+### 2. 마찬가지로, "Semantic Kernel 라이브러리"를 사용해 도구와 AI를 연결하는 방법도 있었습니다.  
 
 AI 클라이언트가 Semantic Kernel(SK)을 쓴다면, 도구 역시 Semantic Kernel의 Plugin이라는 '독자 규격(삼성 20핀)'에 맞춰 개발해야 했습니다.     
 
@@ -100,7 +100,7 @@ kernel.import_plugin_from_object(WebScraperPlugin(), plugin_name="WebScraper")
 
 한계점: 이 `WebScraperPlugin` 도구 역시 Sementaic Kernek 라이브러리를 사용해서 개발된 에이전트(AI)에 대해서만 작동합니다.  
 
-#### 3. "MCP 방식"의 등장: `@mcp.tool`의 의미  
+### 3. "MCP 방식"의 등장: `@mcp.tool`의 의미  
 이런 '호환성 지옥'을 해결하기 위해 **"우리 'USB-C'처럼 표준 규격을 만들자!"**라고 제안된 것이 바로 **MCP(Model Context Protocol)**입니다.  
   
 MCP는 AI와 도구가 서로 '네트워크(HTTP)'를 통해 대화하는 **표준 API 규약**입니다.  

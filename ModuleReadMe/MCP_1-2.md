@@ -116,10 +116,45 @@ MCP는 이 접근 방식을 완전히 바꿨습니다. "AI와 도구가 서로 �
 1. `GET /discover (탐색)` (1번 핀):
 - AI가 도구(충전기)를 포트에 꽂자마자 "너 어떤 기능(도구)들 가지고 있어?  사용법(설명, 인수)이 담긴 '메뉴판(JSON)' 좀 보내줘."
 
-> JSON(메뉴판) 예시
+> JSON(메뉴판) 예시: AI는 도구 서버의 /discover 핀(엔드포인트)에서 다음과 같은 '표준 메뉴판(url)'을 받습니다.
+> ```JSON
+> {
+>  "name": "WebScraperServer",
+>  "tools": [
+>    {
+>      "name": "get_text_from_url",
+>      "description": "useful for when you need to get the text from a web page",
+>      "parameters": {
+>        "type": "object",
+>        "properties": {
+>          "url": {
+>            "type": "string",
+>            "description": "The URL of the web page to scrape"
+>          }
+>        },
+>        "required": ["url"]
+>      }
+>    }
+>    // (만약 다른 도구(함수)가 더 있다면 여기에 계속 추가됩니다)
+>  ]
+>}
+>```
 
 2. `POST /execute (실행)`(2번 핀):
-- AI가 도구 서버에게: "메뉴판을 보니 '웹 스크래핑' 도구가 있네. 이 주소(url)로 가서 텍스트 좀 긁어다 줘." (JSON으로 '주문서' 전송)  
+- AI가 도구 서버에게: "메뉴판(`/discover`)을 보니 '웹 스크래핑' 도구가 있네. 사용자가 요청한 이 주소(url)로 가서 텍스트 좀 긁어다 줘." (JSON으로 '주문서' 전송)
+- `POST /execute`로 전송되는 '주문서(JSON)' 예시: 
+AI가 "https://www.google.com"의 텍스트를 긁어오기로 결정했다면, `/execute` 핀(엔드포인트)에 다음과 같은 '표준 주문서'를 보냅니다.
+> ```
+> JSON
+> {
+>  "tool": "get_text_from_url",
+>  "arguments": {
+>    "url": "https://google.com"
+>  }
+} ```  
+
+- 도구 서버는 이 '주문서'를 받고, `get_text_from_url(url="https://google.com")` 함수를 실행합니다.  이 함수는 https://google.com의 HTML 코드 중에서 태그를 제외한 '순수한 글자(텍스트)'만 긁어옵니다. 그리고 그 결과(긁어온 텍스트)를 AI에게 다시 돌려줍니다.  
+
 
 (2) "1:1 대응"의 진짜 의미: '네트워킹 자동화'
 이제 "Java의 `@Tool`과 Python의 `@mcp.tool`이 어떻게 1:1 대응이라는 건가요?"라는 질문에 답할 수 있습니다.

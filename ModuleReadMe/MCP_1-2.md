@@ -154,7 +154,7 @@ def get_text_from_url(url: str) -> str:
 # 5. 서버 실행 (이 명령어가 /discover, /execute 서버를 자동으로 띄움)
 if __name__ == "__main__":
     mcp.run()
-```
+```  
 
 **[ 2. 클라이언트 예시 (MCP 호환 에이전트) ]**
 ```python
@@ -174,7 +174,25 @@ agent = AzureAIAgent(
 # agent.run("https://google.com 내용 요약해줘")
 ```
 
-(4) MCP 규격으로 도구를 정의하면 무엇이 좋을까요?  
+(4) 아키텍처는 어떻게 바뀐 건가요? (`SDK-SDK` vs `SDK-[MCP]-Server`)  
+여기서 "클라이언트도 `AzureAIAgent`라는 SDK를 쓰는데, 그럼 LangChain SDK 쓰는 거랑 뭐가 다른가요?"라는 날카로운 질문이 나올 수 있습니다.  
+  
+SDK의 '역할'이 완전히 달라졌습니다.  
+
+1. 과거 (독자 규격): `SDK - SDK` 구조  
+- AI 에이전트(Agent)와 도구(Tool)가 모두 같은 `SDK`에 종속되어 '하나의 프로그램' 안에서 강하게 결합된 구조였습니다. (예: `LangChain Agent`는 `LangChain Tool`만 알아들음)
+
+2. 현재 (MCP 표준): `SDK - [MCP] - Server` 구조  
+
+AI 에이전트와 도구가 **네트워크**로 완벽히 분리된 구조입니다.
+
+- `SDK`(클라이언트, 예: AzureAIAgent): AI 에이전트입니다. 이 SDK는 '라이트닝 규격'을 강제하는 게 아니라, **'USB-C(MCP)** 표준'으로 "말하는 법"만 알고 있습니다.   
+- `[MCP]` (링크): 둘을 연결하는 '표준(USB-C)'이자 '네트워크(HTTP)'입니다.
+- `Server` (도구, 예: @mcp.tool 서버): SDK에서 **완전히** **독립**한 '도구 프로그램'입니다. `@mcp.tool` 덕분에 도구가 SDK의 '부품'이 아닌, 고유한 주소(URL)를 가진 '완제품 서버'가 된 것입니다.
+
+         <br> 
+
+(5) MCP 규격으로 도구를 정의하면 무엇이 좋을까요?  
 이렇게 **MCP라는 '표준(USB-C)'**에 맞춰 도구를 개발하면, LangChain이나 SK 같은 '독자 규격'을 쓸 때와는 비교할 수 없는 엄청난 장점들이 생깁니다.  
 
 1. 완벽한 분리 (언어/기술 독립성): AI 클라이언트와 도구 서버가 완전히 분리됩니다. AI는 Python으로, **도구는 Java(Spring AI)**로 만들어도, 둘은 **'표준 MCP(HTTP)'**라는 공통 언어로 완벽하게 통신할 수 있습니다.

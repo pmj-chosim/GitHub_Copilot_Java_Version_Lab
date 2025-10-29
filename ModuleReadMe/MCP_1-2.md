@@ -101,7 +101,7 @@ kernel.import_plugin_from_object(WebScraperPlugin(), plugin_name="WebScraper")
 한계점: 이 `WebScraperPlugin` 도구 역시 Sementaic Kernek 라이브러리를 사용해서 개발된 에이전트(AI)에 대해서만 작동합니다.  
 
 ### 3. "MCP 방식"의 등장: `@mcp.tool`의 의미  
-이런 '호환성 지옥'을 해결하기 위해 **"우리 'USB-C'처럼 표준 규격을 만들자!"**라고 제안된 것이 바로 **MCP(Model Context Protocol)**입니다.  
+이런 '호환성 지옥'을 해결하기 위해 **우리** '**USB-C**'처럼 **표준 규격**을 만들자!라고 제안된 것이 바로 **MCP(Model Context Protocol)**입니다.  
   
 MCP는 AI와 도구가 서로 '네트워크(HTTP)'를 통해 대화하는 **표준 API 규약**입니다.  
   

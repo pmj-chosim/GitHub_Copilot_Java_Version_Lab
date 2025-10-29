@@ -151,7 +151,7 @@ AI가 "https://www.google.com"의 텍스트를 긁어오기로 결정했다면, 
 >  "arguments": {
 >    "url": "https://google.com"
 >  }
-} ```  
+>  ```  
 
 - 도구 서버는 이 '주문서'를 받고, `get_text_from_url(url="https://google.com")` 함수를 실행합니다.  이 함수는 https://google.com의 HTML 코드 중에서 태그를 제외한 '순수한 글자(텍스트)'만 긁어옵니다. 그리고 그 결과(긁어온 텍스트)를 AI에게 다시 돌려줍니다.  
 

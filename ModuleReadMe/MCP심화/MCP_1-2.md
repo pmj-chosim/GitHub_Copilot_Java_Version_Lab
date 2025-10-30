@@ -169,6 +169,8 @@ AI가 "https://www.google.com"의 텍스트를 긁어오기로 결정했다면, 
 이것이 "개발자 경험" 관점에서 두 방식이 1:1로 완벽하게 대응된다는 의미입니다.   
 
 (3) **[ 1. 도구 정의 (MCP 표준 방식, FastMCP 사용-@mcp.tool) ]**
+
+이렇게 @mcp.tool만 붙이면, 복잡한 API 서버를 직접 만들지 않아도 MCP 규격에 맞는 도구 서버가 자동으로 생성됩니다.  
 ```
 import requests
 from bs4 import BeautifulSoup

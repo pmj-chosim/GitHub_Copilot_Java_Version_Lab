@@ -13,7 +13,7 @@ MCP(Model Context Protocol)라는 **표준 규격**(USB-C)이 없었을 때는, 
 AI 발전 초기에도 그런 상황이었습니다.  
 
 그 예로,  
-### 1. LangChain 라이브러리 사용 방식"이 있었습니다.
+### 1. "LangChain 라이브러리 사용 방식"이 있었습니다.
 가장 대표적인 LangChain 프레임워크를 사용하려면, 개발자는 'LangChain 전용' 도구와 'LangChain 전용' AI를 만들어야 했습니다.   
   
 AI 에이전트와 연결하기 위해, 개발자는 순수 Python 함수(심부름 기능)를 LangChain의 Tool 클래스라는 '독자 규격(라이트닝 8핀)'으로 '포장'해야 했습니다.  

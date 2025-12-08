@@ -6,7 +6,7 @@
 먼저 실습을 위해 설정 화면으로 이동합니다.  
   
 1. IntelliJ 상단 메뉴: `File` > `Settings` (Mac은 IntelliJ IDEA > Settings)를 클릭합니다.  
-2. 좌측 메뉴 이동: `Tools` > `GitHub Copilot` > `Customizations`를 선택합니다.
+2. 좌측 메뉴 이동: `Tools` > `GitHub Copilot` > `Customizations`를 선택합니다.  
 
  <img width="1886" height="1089" alt="image" src="https://github.com/user-attachments/assets/3b849bb3-ab28-4c85-88c8-efd03ffbae99" />  
   
@@ -18,7 +18,10 @@
 #### 1. Copilot Instructions: 전반적인 규칙 설정
 Copilot이 대답할 때 항상 지켜야 할 **기본 원칙**(헌법)을 설정합니다.  
 
-1) Copilot Instructions 항목 아래의 [workspace] 버튼을 클릭합니다.  
+1) Copilot Instructions 항목 아래의 [workspace] 버튼을 클릭합니다.
+
+  <img width="1196" height="577" alt="image" src="https://github.com/user-attachments/assets/8c1b1e2e-ba06-4d4f-a518-dfc0b8343dc8" />
+
 2) 입력창에 아래 내용을 복사해서 붙여넣고 OK 또는 Apply를 누릅니다.
 
 ```bash
@@ -32,7 +35,10 @@ Copilot이 대답할 때 항상 지켜야 할 **기본 원칙**(헌법)을 설�
 * 실습 확인
     
 채팅창을 열고 "이 프로젝트의 메서드 명명 규칙 알려줘"라고 간단히 물어보세요.  
-Copilot Instructions의 내용의 `메서드 명명 규칙` 내용을 카멜 케이스에서 스네이크 케이스로 바꿔 주세요
+Copilot Instructions의 내용의 `메서드 명명 규칙` 내용을 카멜 케이스에서 스네이크 케이스로 바꿔 주세요  
+  
+<img width="1382" height="495" alt="image" src="https://github.com/user-attachments/assets/5989a735-6304-4d67-be36-c6f00447e562" />    
+
 
 ```bash
 5. 메서드 명명 규칙: 스네이크 케이스를 사용해 주세요.

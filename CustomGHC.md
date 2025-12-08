@@ -1,4 +1,4 @@
-<img width="1886" height="1089" alt="image" src="https://github.com/user-attachments/assets/7c312c57-83c7-4317-a75b-03aa5eb6fba1" />### 6. GitHub Copilot 나만의 맞춤 설정 (Customization)
+### 6. GitHub Copilot 나만의 맞춤 설정 (Customization)
 이 모듈에서는 GitHub Copilot이 내 코딩 스타일과 프로젝트 규칙을 완벽하게 이해하고 따르도록 설정하는 방법을 배웁니다.  
 매번 "한글로 해줘", "Java 17 써줘"라고 말할 필요 없이, 딱 한 번의 설정으로 Copilot을 나만의 전용 AI 파트너로 만들 수 있습니다.   
 

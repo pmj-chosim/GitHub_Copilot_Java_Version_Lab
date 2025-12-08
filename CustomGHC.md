@@ -43,7 +43,10 @@ Copilot Instructions의 내용의 `메서드 명명 규칙` 내용을 카멜 케
 ```bash
 5. 메서드 명명 규칙: 스네이크 케이스를 사용해 주세요.
 ```
-저장 후,
+
+<img width="1138" height="312" alt="image" src="https://github.com/user-attachments/assets/973ddfea-bc19-47a5-8a64-3d59a04c2148" />  
+
+저장 후,  
 채팅창을 열고 다시 "이 프로젝트의 메서드 명명 규칙 알려줘"라고 간단히 물어보세요.  
 
 ---

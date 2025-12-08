@@ -15,7 +15,7 @@
 
 ---
 
-#### 1. Copilot Instructions: 전반적인 규칙 설정
+### 1. Copilot Instructions: 전반적인 규칙 설정
 Copilot이 대답할 때 항상 지켜야 할 **기본 원칙**(헌법)을 설정합니다.  
 
 1) Copilot Instructions 항목 아래의 [workspace] 버튼을 클릭합니다.
@@ -48,7 +48,7 @@ Copilot Instructions의 내용의 `메서드 명명 규칙` 내용을 카멜 케
 
 ---
 
-#### 2. Instruction Files: 특정 파일 전용 규칙
+### 2. Instruction Files: 특정 파일 전용 규칙
 모든 파일이 아니라, **특정 확장자**(.md 등)나 폴더에서만 적용되는 **세부 규칙**(매뉴얼)을 만듭니다. 이번에는 README.md 파일을 작성할 때만 적용되는 규칙을 만들어봅시다.  
   
 Instruction Files 항목 아래의 [workspace] 버튼을 클릭합니다.  

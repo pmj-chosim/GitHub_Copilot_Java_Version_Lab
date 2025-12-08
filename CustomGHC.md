@@ -29,7 +29,8 @@ Copilot이 대답할 때 항상 지켜야 할 **기본 원칙**(헌법)을 설�
 5. 메서드 명명 규칙: 카멜 케이스(snakeCase)를 사용해 주세요.
 ```
 
-* 실습 확인  
+* 실습 확인
+    
 채팅창을 열고 "이 프로젝트의 메서드 명명 규칙 알려줘"라고 간단히 물어보세요.  
 Copilot Instructions의 내용의 `메서드 명명 규칙` 내용을 카멜 케이스에서 스네이크 케이스로 바꿔 주세요
 
@@ -74,6 +75,7 @@ Readme 파일의 시작 부분에 아래의 간단한 인사를 포함하여 사
 ```
 
 * 실습 확인
+   
 프로젝트 루트에 빈 README.md 파일을 하나 생성합니다. (이미 있다면 내용을 지우세요)  
 채팅창에 "이 프로젝트의 Readme 내용을 작성해줘"라고 요청해 보세요.  
 Copilot이 생성한 초안에 "환영합니다!" 인사말과 지정된 목차 구조가 포함되어 있는지 확인합니다.  
@@ -90,5 +92,94 @@ Git Commit Instructions 항목 아래의 [workspace] 버튼을 클릭합니다.
 형식은 [Feat] 기능명 으로 해줘
 ```
 
+<img width="461" height="975" alt="image" src="https://github.com/user-attachments/assets/3c0945b4-7a4e-455f-9172-21225cc27d96" />    
+  
+* 실습 확인
+아무 파일이나 간단하게 수정합니다 (예: 주석 추가).  
+IntelliJ 좌측의 Commit 탭(또는 Git 창)을 엽니다.  
+커밋 메시지 입력창 위의 Copilot 아이콘을 클릭합니다.  
+생성된 메시지가 [Feat] ... 형식의 한글로 나오는지 확인합니다.  
+
+<img width="520" height="786" alt="image" src="https://github.com/user-attachments/assets/282f5043-113b-4817-be3a-4c139de28d65" />  
+
+----
+
+### 4. Prompt Files: 재사용 가능한 질문 템플릿  
+자주 사용하는 질문 양식을 저장해두고, 필요할 때마다 불러와서 사용합니다.  
+    
+Prompt Files 항목 아래의 [workspace] 버튼을 클릭합니다.    
+  
+<img width="1007" height="676" alt="image" src="https://github.com/user-attachments/assets/683ab75f-d09c-40ed-8449-ee151371da2f" />  
+
+.github/prompts 클릭 후 +를 클릭한 후, Prompt 파일 이름을 지정합니다.
+`kind-helper`라고 지정해 보겠습니다.  
+<img width="593" height="241" alt="image" src="https://github.com/user-attachments/assets/fc41c864-efb7-4aec-b899-21cb4b82dc93" />
+
+  
+아래 내용을 붙여넣고 저장합니다.  
+<img width="1342" height="832" alt="image" src="https://github.com/user-attachments/assets/61bdf988-a686-4ddb-b55e-76239dece957" />  
+
+
+```bash
+---
+name: 'kind-helper'
+description: '친절한 도우미 모드로 답변을 받습니다.'
+---
+system:
+당신은 세상에서 가장 친절하고 상냥한 AI 도우미입니다.
+
+사용자의 질문에 답변할 때는 **반드시** 아래 문장으로 시작해야 합니다:
+"안녕하세요 저는 친절한 도우미입니다."
+
+그 후, 질문에 대해 친절하고 구체적으로 설명해 주세요.
+```
+
+
+* 실습 확인
+
+Copilot 채팅창 입력 부분에 있는  /를 입력해 봅니다.  
+목록에서 kind-helper를 선택합니다.
+
+아무 질문이나 입력하면 **"안녕하세요 저는 친절한 도우미입니다."**라고 인사를 시작하는지 확인합니다.  
+
+---
+
+#### 5. Chat Agents: 나만의 AI 페르소나 만들기
+특정 역할(Role)을 가진 전문가 모드를 만듭니다. 이번에는 코드를 냉철하게 비판하는 **독설가 리뷰어**를 만들어봅시다.  
+
+File > Settings > Tools > GitHub Copilot > Customizations을 열고,
+  
+Chat Agents 항목 아래의 [Workspace] 버튼을 클릭합니다.  
+
+이름을 `Reviewer`라고 지정합니다.  
+
+<img width="775" height="411" alt="image" src="https://github.com/user-attachments/assets/cf29d75e-9388-460d-b06d-7776e691219b" />
+
+  
+아래 내용을 붙여넣고 저장합니다.  
+
+```md
+---
+description: '가차 없는 코드 리뷰 전문가'
+tools: [code-analyzer]
+---
+당신은 20년 경력의 까칠한 시니어 개발자입니다.
+
+1. **목표**: 사용자가 제공한 코드의 '잠재적 버그', '성능 문제', '가독성 문제'를 찾아내세요.
+2. **말투**: 절대 친절하게 인사하지 마세요. 바로 문제점부터 지적하세요. ("이 코드는 쓰레기입니다" 같은 표현은 피하되, 냉소적으로 말하세요.)
+3. **형식**:
+    - [문제점]: 무엇이 문제인지 한 줄 요약
+    - [이유]: 왜 안 좋은지 설명
+    - [수정안]: 개선된 코드 블록
+4. **제약**: 코드가 완벽하다면 "나쁘지 않군." 한마디만 하세요.
+```
+
+* 실습 확인
+
+채팅창에서 
+  
+일부러 비효율적인 코드(예: 이중 for문)를 보여주며 "이거 어때?"라고 물어보세요.  
+  
+Copilot이 냉소적인 말투로 문제점을 조목조목 지적하는지 확인합니다.
 
 

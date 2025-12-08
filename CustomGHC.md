@@ -54,11 +54,16 @@ Copilot Instructions의 내용의 `메서드 명명 규칙` 내용을 카멜 케
 ### 2. Instruction Files: 특정 파일 전용 규칙
 모든 파일이 아니라, **특정 확장자**(.md 등)나 폴더에서만 적용되는 **세부 규칙**(매뉴얼)을 만듭니다. 이번에는 README.md 파일을 작성할 때만 적용되는 규칙을 만들어봅시다.  
   
-Instruction Files 항목 아래의 [workspace] 버튼을 클릭합니다.  
+Instruction Files 항목 아래의 [workspace] 버튼을 클릭합니다.   
+  
+<img width="1017" height="522" alt="image" src="https://github.com/user-attachments/assets/d3c8bb87-d4c8-4896-bba8-e8e609a334f4" />  
+
+<img width="861" height="475" alt="image" src="https://github.com/user-attachments/assets/6d8de9a8-bbdb-4334-bfb9-c6cd760c3c1f" />  
+
 
 입력창에 아래 내용을(상단의 --- 포함) 그대로 복사해서 붙여넣고 저장합니다.  
 
-```bash
+```md
 ---
 applyTo: '**/*.md'
 description: 'Readme 작성 규칙'

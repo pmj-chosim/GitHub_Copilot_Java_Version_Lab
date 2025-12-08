@@ -31,13 +31,15 @@ Copilot이 대답할 때 항상 지켜야 할 **기본 원칙**(헌법)을 설�
 4. 테스트: 단위 테스트는 JUnit 5와 Mockito를 사용해 주세요.
 5. 메서드 명명 규칙: 카멜 케이스(snakeCase)를 사용해 주세요.
 ```
+<img width="1382" height="495" alt="image" src="https://github.com/user-attachments/assets/5989a735-6304-4d67-be36-c6f00447e562" />  
 
+  
 * 실습 확인
     
 채팅창을 열고 "이 프로젝트의 메서드 명명 규칙 알려줘"라고 간단히 물어보세요.  
 Copilot Instructions의 내용의 `메서드 명명 규칙` 내용을 카멜 케이스에서 스네이크 케이스로 바꿔 주세요  
   
-<img width="1382" height="495" alt="image" src="https://github.com/user-attachments/assets/5989a735-6304-4d67-be36-c6f00447e562" />    
+  
 
 
 ```bash

@@ -11,6 +11,8 @@
 **모듈 4**: [GitHub Copilot을 활용한 단위 테스트 개발](https://github.com/pmj-chosim/GitHub_Copilot_Java_Version_Lab/blob/main/ModuleReadMe/Module4.md)       
 **모듈 5**: [GitHub Copilot을 사용하여 기존 코드 리팩토링](https://github.com/pmj-chosim/GitHub_Copilot_Java_Version_Lab/blob/main/ModuleReadMe/Module5.md)        
 
+**추가 모듈**: [Custom 셋팅](https://github.com/pmj-chosim/GitHub_Copilot_Java_Version_Lab/blob/main/ModuleReadMe/6_CustomGHC.md)   
+
 ## MCP 실습  
 
 **모듈 1**: [MCP 서버 구축하기](https://github.com/pmj-chosim/GitHub_Copilot_Java_Version_Lab/blob/main/ModuleReadMe/MCPModule.md)    
